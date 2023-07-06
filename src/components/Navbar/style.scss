@@ -1,7 +1,38 @@
-nav{
+.navtop{
+  display: grid;
+  grid-template-columns: 20% 70% 10%;
+  grid-template-rows: 10% 80% 10%;
   width : 100%;
   height : 10vh;
   border: 1px solid black;
   margin: auto;
   text-align: center;
+}
+nav{
+  display: grid;
+  grid-template-columns: 10% 40% 40% 10%;
+  grid-column: 2;
+  grid-row:2;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+}
+nav li{
+  margin:10px;
+}
+.navhead{
+  grid-column: 1;
+  grid-row: 2;
+  display: grid;
+  grid-template-columns: 20% 30% 30% 20%;
+}
+logo{
+  grid-column: 2;
+}
+.navlist {
+  grid-column: 2;
+}
+.toolist{
+  grid-column: 3;
 }

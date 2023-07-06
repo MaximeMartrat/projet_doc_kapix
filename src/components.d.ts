@@ -7,6 +7,7 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
+    ButtonNav: typeof import('./components/Button-nav/index.vue')['default']
     Contenu: typeof import('./components/Contenu/index.vue')['default']
     FooterContenu: typeof import('./components/Footer-contenu/index.vue')['default']
     KaAmChart: typeof import('./components/Elements/KaAmChart.vue')['default']
@@ -67,6 +68,7 @@ declare module '@vue/runtime-core' {
     KaYesNoInput: typeof import('./components/Inputs/KaYesNoInput.vue')['default']
     KaYoutube: typeof import('./components/Elements/KaYoutube.vue')['default']
     KaYoutubeInput: typeof import('./components/Inputs/KaYoutubeInput.vue')['default']
+    Logo: typeof import('./components/Logo/index.vue')['default']
     Main: typeof import('./components/Main/index.vue')['default']
     Navbar: typeof import('./components/Navbar/index.vue')['default']
     NavbarD: typeof import('./components/Navbar-d/index.vue')['default']
