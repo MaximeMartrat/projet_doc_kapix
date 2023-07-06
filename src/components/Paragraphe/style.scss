@@ -1,0 +1,27 @@
+// paragraphe
+.paragraphe-c1 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 0 0 16px 0;
+  }
+  &.property-style {
+    font-size: 1.25rem;
+    font-weight: 300;
+  }
+  &.scroller-style {
+    flex-wrap: wrap;
+  }
+}
+// paragraphe > text
+.text-c1 {
+  &.outer-style {
+    padding: 0 0 16px 0;
+    z-index: 1000;
+  }
+  &.property-style {
+    overflow: hidden;
+    font-size: 1.25rem;
+    font-weight: 300;
+  }
+}

@@ -1,0 +1,284 @@
+{
+  "cliVersion": "0.0.237",
+  "projects": [
+    {
+      "id": "sparda/kapixcomponentspreview",
+      "codegenVersion": "4.0.1-alpha+1.1688552322287",
+      "dependencies": {},
+      "lang": "vuejs-3",
+      "stack": "front-end",
+      "version": 2,
+      "fileLocks": [
+        {
+          "id": "3YrxjPtNG2GhutJAHV9cYy",
+          "name": "en-US",
+          "path": "src/pages/Index/en-US.vue",
+          "type": "page",
+          "hash": "aaa08fa08be066c07f1b90cd3b3a2d2c139dcef5",
+          "postLintHash": "tempHash"
+        },
+        {
+          "id": "3YrxjPtNG2GhutJAHV9cYy",
+          "name": "fr-FR",
+          "path": "src/pages/Index/fr-FR.vue",
+          "type": "page",
+          "hash": "eaa60bb70ea1b06f4d425288eb836b3f76a4e670",
+          "postLintHash": "tempHash"
+        },
+        {
+          "id": "3YrxjPtNG2GhutJAHV9cYy",
+          "name": "index",
+          "path": "src/pages/index.vue",
+          "type": "page",
+          "hash": "e493390dbf84b4a7a8fed35fa9aeedaba547c92d",
+          "postLintHash": "tempHash"
+        },
+        {
+          "id": "3YrxjPtNG2GhutJAHV9cYy",
+          "path": "src/pages/Index/store.custom.ts",
+          "type": "store",
+          "custom": true,
+          "hash": "ba7a9854730478c7bec346c84f2c12798d46007f",
+          "postLintHash": "tempHash"
+        },
+        {
+          "id": "3YrxjPtNG2GhutJAHV9cYy",
+          "path": "src/pages/Index/store.ts",
+          "type": "store",
+          "hash": "838970b7f8b52c057b2411e22ca6d0015578ecad",
+          "postLintHash": "tempHash"
+        },
+        {
+          "id": "3YrxjPtNG2GhutJAHV9cYy",
+          "path": "src/pages/Index/style.custom.scss",
+          "type": "style",
+          "custom": true,
+          "hash": "dbabd81fa309a7e40110b779f36dee9946505c69",
+          "postLintHash": "tempHash"
+        },
+        {
+          "id": "3YrxjPtNG2GhutJAHV9cYy",
+          "path": "src/pages/Index/style.scss",
+          "type": "style",
+          "hash": "9d25621d61f76703d9f6a06d3085237fdd9fc5de",
+          "postLintHash": "tempHash"
+        },
+        {
+          "id": "7R4cS3RER3AYVA98iS191U",
+          "path": "src/components/Paragraphe/index.vue",
+          "type": "component",
+          "hash": "fcb8ebf07c358c6a1f672194d55775dc9637943a",
+          "postLintHash": "tempHash"
+        },
+        {
+          "id": "7R4cS3RER3AYVA98iS191U",
+          "path": "src/components/Paragraphe/store.custom.ts",
+          "type": "store",
+          "custom": true,
+          "hash": "d540a91712dacea671cd9b3f689ab7beb57d8af9",
+          "postLintHash": "tempHash"
+        },
+        {
+          "id": "7R4cS3RER3AYVA98iS191U",
+          "path": "src/components/Paragraphe/store.ts",
+          "type": "store",
+          "hash": "7d30a9386405208cff6060df20614758086508de",
+          "postLintHash": "tempHash"
+        },
+        {
+          "id": "7R4cS3RER3AYVA98iS191U",
+          "path": "src/components/Paragraphe/style.custom.scss",
+          "type": "style",
+          "custom": true,
+          "hash": "dbabd81fa309a7e40110b779f36dee9946505c69",
+          "postLintHash": "tempHash"
+        },
+        {
+          "id": "7R4cS3RER3AYVA98iS191U",
+          "path": "src/components/Paragraphe/style.scss",
+          "type": "style",
+          "hash": "25f4a5b6dbd098ead83f7b3259be4a3e61f0a79c",
+          "postLintHash": "tempHash"
+        },
+        {
+          "id": "kRzQCxLLHJFuXHcMtRmez",
+          "path": "src/components/Test/index.vue",
+          "type": "component",
+          "hash": "fa60b50ef3c2ec00c2f5e1a3e95f13ad45e8769c",
+          "postLintHash": "tempHash"
+        },
+        {
+          "id": "kRzQCxLLHJFuXHcMtRmez",
+          "path": "src/components/Test/store.custom.ts",
+          "type": "store",
+          "custom": true,
+          "hash": "cd54d5a6e9f0d4f1db9e047a0bb5cece27aa8c71",
+          "postLintHash": "tempHash"
+        },
+        {
+          "id": "kRzQCxLLHJFuXHcMtRmez",
+          "path": "src/components/Test/store.ts",
+          "type": "store",
+          "hash": "c67237ff3897e08fc8b02ce7caa0ebeb291aba40",
+          "postLintHash": "tempHash"
+        },
+        {
+          "id": "kRzQCxLLHJFuXHcMtRmez",
+          "path": "src/components/Test/style.custom.scss",
+          "type": "style",
+          "custom": true,
+          "hash": "dbabd81fa309a7e40110b779f36dee9946505c69",
+          "postLintHash": "tempHash"
+        },
+        {
+          "id": "kRzQCxLLHJFuXHcMtRmez",
+          "path": "src/components/Test/style.scss",
+          "type": "style",
+          "hash": "e15ea7a94ca00052cd2f672eb8c6883823fb027a",
+          "postLintHash": "tempHash"
+        },
+        {
+          "id": "xyTKFGvJ6A6xBoVcsu7gA8",
+          "name": "404",
+          "path": "src/pages/[...all].vue",
+          "type": "page",
+          "hash": "c9de1fff266c3cb701e397b1aa3aa8b3d7a7d8e3",
+          "postLintHash": "tempHash"
+        },
+        {
+          "id": "xyTKFGvJ6A6xBoVcsu7gA8",
+          "path": "src/pages/Page404/store.custom.ts",
+          "type": "store",
+          "custom": true,
+          "hash": "8fa7ae406c3ddb01328ce15ce040eac109f48ae2",
+          "postLintHash": "tempHash"
+        },
+        {
+          "id": "xyTKFGvJ6A6xBoVcsu7gA8",
+          "path": "src/pages/Page404/store.ts",
+          "type": "store",
+          "hash": "e817f262ed0b9ee0f0d935da345213645520c3d1",
+          "postLintHash": "tempHash"
+        },
+        {
+          "id": "xyTKFGvJ6A6xBoVcsu7gA8",
+          "path": "src/pages/Page404/style.custom.scss",
+          "type": "style",
+          "custom": true,
+          "hash": "dbabd81fa309a7e40110b779f36dee9946505c69",
+          "postLintHash": "tempHash"
+        },
+        {
+          "id": "xyTKFGvJ6A6xBoVcsu7gA8",
+          "path": "src/pages/Page404/style.scss",
+          "type": "style",
+          "hash": "81a7e57350c176c2eb8a0474082cf80a745c5cff",
+          "postLintHash": "tempHash"
+        },
+        {
+          "path": "public/favicon.png",
+          "type": "asset",
+          "hash": "76fa2fb617c2878bbd64754d00a80c7616f68829",
+          "postLintHash": "tempHash"
+        },
+        {
+          "path": "public/pwa-192x192.png",
+          "type": "asset",
+          "hash": "6d5d780a0d34783a82daf2fbd366baa2cb09aac3",
+          "postLintHash": "tempHash"
+        },
+        {
+          "path": "public/pwa-512x512.png",
+          "type": "asset",
+          "hash": "69fbb9f10519913843915b02cc24afd9ac925c5e",
+          "postLintHash": "tempHash"
+        },
+        {
+          "path": ".github/workflows/kapix-action.yml",
+          "type": "internal",
+          "custom": true,
+          "hash": "c7f2e63cf6d16c0367919de1463ae70679f6c22a",
+          "postLintHash": "tempHash"
+        },
+        {
+          "path": ".gitlab-ci.yml",
+          "type": "internal",
+          "custom": true,
+          "hash": "40e636ca6752a0d882418010812b80c155763a29",
+          "postLintHash": "tempHash"
+        },
+        {
+          "path": ".vscode/settings.json",
+          "type": "internal",
+          "hash": "117d3d30bfe752bdbf40696ab7e0e88e95142ab8",
+          "postLintHash": "tempHash"
+        },
+        {
+          "path": "index.html",
+          "type": "internal",
+          "custom": true,
+          "hash": "c2b84ed07fea4133bf02d6de14746dcbba699081",
+          "postLintHash": "tempHash"
+        },
+        {
+          "path": "src/app-info.json",
+          "type": "internal",
+          "hash": "6f367bb325f22f9a5635085a2df1cc1abf21c3c5",
+          "postLintHash": "tempHash"
+        },
+        {
+          "path": "src/dynamicRoutes.ts",
+          "type": "internal",
+          "custom": true,
+          "hash": "a83f19b70108afc290ecca06964cb95324d245aa",
+          "postLintHash": "tempHash"
+        },
+        {
+          "path": "src/main.ts",
+          "type": "internal",
+          "custom": true,
+          "hash": "d0b837704a9f4c94f117b9cee584b8bf32427d8b",
+          "postLintHash": "tempHash"
+        },
+        {
+          "path": "src/shims.d.ts",
+          "type": "internal",
+          "hash": "f104559fee0d1551e803aed061f7a59090d7ed7e",
+          "postLintHash": "tempHash"
+        },
+        {
+          "path": "src/stores/appAuthentication.custom.ts",
+          "type": "store",
+          "custom": true,
+          "hash": "989028e21a93c7c7b88bac7e80e4139192f1b026",
+          "postLintHash": "tempHash"
+        },
+        {
+          "path": "src/stores/appAuthentication.ts",
+          "type": "store",
+          "hash": "8635597e2dfa39bda19c1185c545cd877c915f74",
+          "postLintHash": "tempHash"
+        },
+        {
+          "path": "src/stores/appData.custom.ts",
+          "type": "store",
+          "custom": true,
+          "hash": "e25f2e9d8a32fd53e09db647b267d32540d984de",
+          "postLintHash": "tempHash"
+        },
+        {
+          "path": "src/stores/appData.ts",
+          "type": "store",
+          "hash": "181ab85ff6893f0afa7dba86d21696c0d3831de4",
+          "postLintHash": "tempHash"
+        },
+        {
+          "path": "src/stores/index.ts",
+          "type": "store",
+          "hash": "e14eee2b36f433a0619e96e2aeabc3806edc3c83",
+          "postLintHash": "tempHash"
+        }
+      ]
+    }
+  ]
+}
