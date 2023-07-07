@@ -7,7 +7,9 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
-    ButtonNav: typeof import('./components/Button-nav/index.vue')['default']
+    BoutonList: typeof import('./components/BoutonList/index.vue')['default']
+    ButtonList: typeof import('./components/ButtonList/index.vue')['default']
+    ButtonNav: typeof import('./components/ButtonNav/index.vue')['default']
     Contenu: typeof import('./components/Contenu/index.vue')['default']
     FooterContenu: typeof import('./components/Footer-contenu/index.vue')['default']
     KaAmChart: typeof import('./components/Elements/KaAmChart.vue')['default']
@@ -79,5 +81,6 @@ declare module '@vue/runtime-core' {
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     Test: typeof import('./components/Test/index.vue')['default']
+    VFor: typeof import('./components/VFor/index.vue')['default']
   }
 }

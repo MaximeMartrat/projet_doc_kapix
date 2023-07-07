@@ -317,8 +317,8 @@ import { generateMeta } from 'kapix-components-vue3'
 import { checkBoxPreview } from '../Index/store'
 import Paragraphe from '~/components/Paragraphe/index.vue'
 import { appDataStore } from '~/stores'
-import './Index/style.scss'
-import './Index/style.custom.scss'
+import '../Index/style.scss'
+import '../Index/style.custom.scss'
 
 defineOptions({
   name: 'HomePage'

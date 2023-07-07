@@ -4,6 +4,7 @@ import { setupLayouts } from 'virtual:generated-layouts'
 import Previewer from 'virtual:vue-component-preview'
 import kapixComponents from 'kapix-components-vue3'
 import App from './App.vue'
+
 import type { UserModule } from './types'
 import { dynamicPaths } from './dynamicRoutes'
 import generatedRoutes from '~pages'

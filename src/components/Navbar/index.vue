@@ -9,16 +9,20 @@
     <nav>
       <ul class="navlist">
         <li>
-          <ButtonNav action="nav"></ButtonNav>
+          <ButtonNav
+            text="liste1"
+            action="link">
+          </ButtonNav>
         </li>
         <li>
-          <ButtonNav
-            action="link"
-            text="liste"></ButtonNav>
+          <ButtonNav>
+          </ButtonNav>
         </li>
-        <li>3</li>
+        <li>
+          <ButtonNav>
+          </ButtonNav>
+        </li>
         <li>4</li>
-        <li>5</li>
       </ul>
       <ul class="tolllist">
         <li>1</li>
@@ -31,5 +35,6 @@
 <script setup lang="ts">
 import './style.scss'
 import Logo from '../Logo/index.vue'
-import ButtonNav from '../Button-nav/index.vue'
+import ButtonNav from '../ButtonNav/index.vue'
+
 </script>

@@ -1,0 +1,19 @@
+.button-nav{
+  border: 1px solid black;
+  border-radius: 5px;
+  height: 40px;
+  width: 100px;
+}
+.button-nav:hover{
+  background-color: #F6C041;
+}
+.linklist{
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  border: 1px solid black;
+  margin-top: 20px;
+  width: 100px;
+  background-color: white;
+  z-index: 9;
+}
