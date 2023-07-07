@@ -1,13 +1,13 @@
 <template>
   <button
     class="button-list"
-    @click="handleLink(link)">
+    @click="checkLink(link)">
     {{ link }}
   </button>
 </template>
 <script setup lang="ts">
 import './style.scss'
-import { handleLink } from './store'
+import { checkLink } from './store'
 defineProps({
   link: {
     type: String,

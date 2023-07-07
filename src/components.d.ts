@@ -80,6 +80,7 @@ declare module '@vue/runtime-core' {
     ReloadPrompt: typeof import('./components/ReloadPrompt.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    SearchBar: typeof import('./components/SearchBar/index.vue')['default']
     Test: typeof import('./components/Test/index.vue')['default']
     VFor: typeof import('./components/VFor/index.vue')['default']
   }

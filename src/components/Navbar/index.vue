@@ -3,7 +3,7 @@
     <div class="navhead">
       <logo></logo>
       <div class="search">
-        search
+        <SearchBar></SearchBar>
       </div>
     </div>
     <nav>
@@ -22,7 +22,7 @@
           <ButtonNav>
           </ButtonNav>
         </li>
-        <li>4</li>
+        <li></li>
       </ul>
       <ul class="tolllist">
         <li>1</li>
@@ -36,5 +36,5 @@
 import './style.scss'
 import Logo from '../Logo/index.vue'
 import ButtonNav from '../ButtonNav/index.vue'
-
+import SearchBar from '../SearchBar/index.vue'
 </script>

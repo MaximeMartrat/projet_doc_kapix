@@ -3,16 +3,16 @@ import { ref } from 'vue'
 
 export const Link = ref('Home')
 
-export function handleLink (link: string) {
+export function checkLink (link: string) {
   if (link === 'Home') {
-    // navigation
+    // Home
     Link.value = 'Home'
   }
   else if (link === 'Checkbox') {
+    // Checkbox
     Link.value = 'Checkbox'
   }
   else {
     // autres actions
-    console.log('autres')
   }
 }
