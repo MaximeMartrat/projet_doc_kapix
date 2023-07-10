@@ -22,7 +22,6 @@ import type { NormalizedOutputOptions, OutputBundle } from 'rollup'
 import DefineOptions from 'unplugin-vue-define-options/vite'
 import autoprefixer from 'autoprefixer'
 import appInfo from './src/app-info.json'
-
 const pwaInfo = appInfo.pwa as Nullable<KeyValuePair>
 
 const staticFolder = 'assets'
@@ -380,3 +379,17 @@ export default defineConfig({
     ]
   }
 })
+
+export function getPages (req: Request, res: Response) {
+  const pagesDirectory = '~/pages'
+  fs.readdir(pagesDirectory, (err, files) => {
+    if (err) {
+      console.error(err)
+      res.status(500).json({ error: 'Erreur lors de la recuperation de la page' })
+    }
+    else {
+      const pages = files.map(file => file.replace('.md', ''))
+      res.json(pages)
+    }
+  })
+}

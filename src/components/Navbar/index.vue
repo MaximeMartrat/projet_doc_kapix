@@ -1,21 +1,23 @@
 <template>
   <div class="navtop">
     <div class="navhead">
-      <logo></logo>
-      <div class="search">
-        <SearchBar></SearchBar>
-      </div>
+      <logo class="logo"></logo>
+      <ButtonSearch class="'searchbar'"></ButtonSearch>
     </div>
     <nav>
       <ul class="navlist">
         <li>
           <ButtonNav
+            index="0"
             text="liste1"
             action="link">
           </ButtonNav>
         </li>
         <li>
-          <ButtonNav>
+          <ButtonNav
+            index="1"
+            text="liste2"
+            action="link">
           </ButtonNav>
         </li>
         <li>
@@ -36,5 +38,5 @@
 import './style.scss'
 import Logo from '../Logo/index.vue'
 import ButtonNav from '../ButtonNav/index.vue'
-import SearchBar from '../SearchBar/index.vue'
+import ButtonSearch from '../ButtonSearch/index.vue'
 </script>

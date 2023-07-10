@@ -1,16 +1,17 @@
 import { ref } from 'vue'
-import './style.scss'
-export const isActive = ref(false)
 
-export function handleClick (action: string) {
+const isActive = ref([])
+
+export function handleClick (index: number, action: string) {
   if (action === 'navigate') {
     // navigation
   }
   else if (action === 'link') {
-    // liste déroulante de liens
-    isActive.value = !isActive.value // Inverse la valeur de isActive à chaque clic sur le bouton
+    isActive.value[index] = !isActive.value[index] // Inverse la valeur de isActive pour l'index spécifié
   }
   else {
     // autres actions
   }
 }
+
+export { isActive }

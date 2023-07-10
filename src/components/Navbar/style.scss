@@ -27,8 +27,11 @@ nav li{
   display: grid;
   grid-template-columns: 20% 30% 30% 20%;
 }
-logo{
-  grid-column: 2;
+.logo{
+  grid-column: 1;
+}
+.searchbar{
+  grid-column: 1;
 }
 .navlist {
   grid-column: 2;
