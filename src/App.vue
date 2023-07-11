@@ -1,11 +1,15 @@
 <template>
-  <router-view />
-  <KapixTooltipsContainer />
+  <div
+    :class="theme">
+    <router-view />
+    <KapixTooltipsContainer />
+  </div>
 </template>
 
 <script setup lang="ts">
 import { DEBUG, avoid_debug_127_0_0_1 } from 'kapix-components-vue3'
 import appInfo from '~/app-info.json'
+import { theme } from '~/components/ButtonStyle/store'
 // https://github.com/vueuse/head
 // you can use this to manipulate the document head in any components,
 // they will be rendered correctly in the html results with vite-ssg
@@ -98,6 +102,14 @@ html {
   left: 0;
   width: 100%;
   height: 3px;
+}
+.dark {
+  background-color: black;
+  color: white;
+}
+.light {
+  background-color: white;
+  color: black;
 }
 </style>
 

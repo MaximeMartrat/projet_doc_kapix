@@ -7,10 +7,10 @@
       <template v-if="action === 'link' && isActive[index]">
         <ul class="linklist">
           <li>
-            <ButtonList link="Home"></ButtonList>
+            <ButtonList link="accueil"></ButtonList>
           </li>
           <li>
-            <ButtonList link="Checkbox"></ButtonList>
+            <ButtonList link="checkbox"></ButtonList>
           </li>
         </ul>
       </template>
@@ -20,7 +20,7 @@
 
 <script setup lang="ts">
 import ButtonList from '../ButtonList/index.vue'
-import { isActive, handleClick } from './store'
+import { handleClick, isActive } from './store'
 import './style.scss'
 defineProps({
   index: {

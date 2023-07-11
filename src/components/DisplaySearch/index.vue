@@ -18,16 +18,9 @@
         v-for="page in filteredList()"
         :key="page"
         class="item-page">
-        <template v-if="page === 'Home'">
-          <ButtonList
-            link="Home"
-            @click="displaySearch"></ButtonList>
-        </template>
-        <template v-if="page === 'Checkbox'">
-          <ButtonList
-            link="Checkbox"
-            @click="displaySearch"></ButtonList>
-        </template>
+        <ButtonList
+          :link="page"
+          @click="displaySearch"></ButtonList>
       </div>
     </div>
   </div>
@@ -37,9 +30,11 @@ import './style.scss'
 import { ref } from 'vue'
 import Logo from '../Logo/index.vue'
 import ButtonList from '~/components/ButtonList/index.vue'
-import { displaySearch } from '~/components/ButtonSearch/store.ts'
+import { displaySearch } from '~/components/ButtonSearch/store'
 const input = ref('')
-const pages = ['Home', 'Checkbox', 'NotFound']
+const router = useRouter()
+const allPages = router.getRoutes().map(route => route.name).filter(name => name)
+const pages = allPages.map(page => page?.toString())
 const isActive = ref(false)
 function filteredList () {
   const searchText = input.value.trim().toUpperCase()
@@ -48,7 +43,7 @@ function filteredList () {
   }
   else {
     return pages.filter(page =>
-      page.toUpperCase().includes(input.value.toUpperCase())
+      page?.toUpperCase().includes(input.value.toUpperCase())
     )
   }
 }

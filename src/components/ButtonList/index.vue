@@ -11,7 +11,7 @@ import { checkLink } from './store'
 defineProps({
   link: {
     type: String,
-    default: 'Home'
+    default: 'accueil'
   }
 })
 </script>

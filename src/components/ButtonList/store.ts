@@ -1,16 +1,16 @@
 import './style.scss'
 import { ref } from 'vue'
 
-export const Link = ref('Home')
+export const Link = ref('accueil')
 
 export function checkLink (link: string) {
-  if (link === 'Home') {
+  if (link === 'accueil') {
     // Home
-    Link.value = 'Home'
+    Link.value = 'accueil'
   }
-  else if (link === 'Checkbox') {
+  else if (link === 'checkbox') {
     // Checkbox
-    Link.value = 'Checkbox'
+    Link.value = 'checkbox'
   }
   else {
     // autres actions

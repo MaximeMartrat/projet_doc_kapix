@@ -8,14 +8,14 @@
       <ul class="navlist">
         <li>
           <ButtonNav
-            index="0"
+            :index="0"
             text="liste1"
             action="link">
           </ButtonNav>
         </li>
         <li>
           <ButtonNav
-            index="1"
+            :index="1"
             text="liste2"
             action="link">
           </ButtonNav>
@@ -27,9 +27,7 @@
         <li></li>
       </ul>
       <ul class="tolllist">
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
+        <li><ButtonStyle></ButtonStyle></li>
       </ul>
     </nav>
   </div>
@@ -39,4 +37,5 @@ import './style.scss'
 import Logo from '../Logo/index.vue'
 import ButtonNav from '../ButtonNav/index.vue'
 import ButtonSearch from '../ButtonSearch/index.vue'
+import ButtonStyle from '../ButtonStyle/index.vue'
 </script>
