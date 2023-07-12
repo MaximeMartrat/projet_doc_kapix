@@ -15,6 +15,7 @@ declare module '@vue/runtime-core' {
     Contenu: typeof import('./components/Contenu/index.vue')['default']
     DisplaySearch: typeof import('./components/DisplaySearch/index.vue')['default']
     FooterContenu: typeof import('./components/Footer-contenu/index.vue')['default']
+    Generic: typeof import('./components/Generic/index.vue')['default']
     KaAmChart: typeof import('./components/Elements/KaAmChart.vue')['default']
     KaAutoCompleteInput: typeof import('./components/Inputs/KaAutoCompleteInput.vue')['default']
     KaAvatar: typeof import('./components/Elements/KaAvatar.vue')['default']

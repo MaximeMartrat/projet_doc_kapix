@@ -10,11 +10,17 @@
   padding-top: 50px;
   padding-bottom: 50px;
 }
+.container-content{
+  margin-left: 2%;
+  margin-right: 2%;
+}
 .dark {
   background-color: black;
   color: white;
+  border-color: white;
 }
 .light {
   background-color: white;
   color: black;
+  border-color: black;
 }

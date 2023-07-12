@@ -1,5 +1,7 @@
 <template>
-  <div class="navtop">
+  <div
+    :class="theme"
+    class="navtop">
     <div class="navhead">
       <logo class="logo"></logo>
       <ButtonSearch class="'searchbar'"></ButtonSearch>
@@ -9,19 +11,23 @@
         <li>
           <ButtonNav
             :index="0"
-            text="liste1"
-            action="link">
+            text="Start"
+            action="link"
+            page="pages">
           </ButtonNav>
         </li>
         <li>
           <ButtonNav
             :index="1"
-            text="liste2"
-            action="link">
+            text="Composants"
+            action="link"
+            page="composants">
           </ButtonNav>
         </li>
         <li>
-          <ButtonNav>
+          <ButtonNav
+            text="redirect"
+            action="navigate">
           </ButtonNav>
         </li>
         <li></li>
@@ -38,4 +44,6 @@ import Logo from '../Logo/index.vue'
 import ButtonNav from '../ButtonNav/index.vue'
 import ButtonSearch from '../ButtonSearch/index.vue'
 import ButtonStyle from '../ButtonStyle/index.vue'
+import { theme } from '~/components/ButtonStyle/store'
+
 </script>
