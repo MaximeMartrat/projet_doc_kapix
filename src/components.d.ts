@@ -8,6 +8,7 @@ export {}
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     BoutonList: typeof import('./components/BoutonList/index.vue')['default']
+    ButtonFooter: typeof import('./components/ButtonFooter/index.vue')['default']
     ButtonList: typeof import('./components/ButtonList/index.vue')['default']
     ButtonNav: typeof import('./components/ButtonNav/index.vue')['default']
     ButtonSearch: typeof import('./components/ButtonSearch/index.vue')['default']
@@ -15,7 +16,10 @@ declare module '@vue/runtime-core' {
     Contenu: typeof import('./components/Contenu/index.vue')['default']
     DisplaySearch: typeof import('./components/DisplaySearch/index.vue')['default']
     FooterContenu: typeof import('./components/Footer-contenu/index.vue')['default']
+    FooterLink: typeof import('./components/FooterLink/index.vue')['default']
+    FooterLinkInde: typeof import('./components/FooterLink/inde.vue')['default']
     Generic: typeof import('./components/Generic/index.vue')['default']
+    Icon: typeof import('~icons/ic/on')['default']
     KaAmChart: typeof import('./components/Elements/KaAmChart.vue')['default']
     KaAutoCompleteInput: typeof import('./components/Inputs/KaAutoCompleteInput.vue')['default']
     KaAvatar: typeof import('./components/Elements/KaAvatar.vue')['default']
@@ -80,6 +84,7 @@ declare module '@vue/runtime-core' {
     NavbarD: typeof import('./components/Navbar-d/index.vue')['default']
     NavbarG: typeof import('./components/Navbar-g/index.vue')['default']
     NavBottom: typeof import('./components/NavBottom/index.vue')['default']
+    NavFooter: typeof import('./components/NavFooter/index.vue')['default']
     Paragraphe: typeof import('./components/Paragraphe/index.vue')['default']
     ReloadPrompt: typeof import('./components/ReloadPrompt.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']

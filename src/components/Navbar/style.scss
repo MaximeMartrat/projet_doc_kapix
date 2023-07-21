@@ -1,3 +1,11 @@
+.button-nav{
+  border-radius: 5px;
+  height: 40px;
+  width: 100px;
+}
+.button-nav:hover{
+  background-color: #F6C041;
+}
 .navtop{
   display: grid;
   grid-template-columns: 20% 70% 10%;

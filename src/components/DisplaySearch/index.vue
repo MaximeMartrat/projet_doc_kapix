@@ -48,9 +48,9 @@ import { theme } from '~/components/ButtonStyle/store'
 
 const input = ref('')
 const router = useRouter()
-const exceptionsPage = ['all', 'index', 'Index-fr-FR', 'Index-en-US', 'checkbox-fr-FR', 'checkbox-en-US']
+const exceptionsPage = ['all', 'index']
 const allPages = router.getRoutes().map(route => route.name).filter(name => name)
-const pages = allPages.map(page => page?.toString()).filter(page => page !== undefined && !exceptionsPage.includes(page as string))
+const pages = allPages.map(page => page?.toString()).filter(page => page !== undefined && !page.endsWith('en-US') && !page.endsWith('fr-FR') && !exceptionsPage.includes(page as string))
 const isActive = ref(false)
 
 function filteredList () {

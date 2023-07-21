@@ -3,9 +3,6 @@
     <NavLeft></NavLeft>
   </div>
   <div>
-    <NavRight></NavRight>
-  </div>
-  <div>
     <Contenu></Contenu>
   </div>
 </template>
@@ -24,7 +21,6 @@ import { appDataStore } from '~/stores'
 import './Index/style.scss'
 import './Index/style.custom.scss'
 import NavLeft from '~/components/Navbar-g/index.vue'
-import NavRight from '~/components/Navbar-d/index.vue'
 import Contenu from '~/components/Contenu/index.vue'
 defineOptions({
   name: 'HomePage'

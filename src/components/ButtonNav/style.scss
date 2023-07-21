@@ -1,5 +1,4 @@
 .button-nav{
-  border: 1px solid black;
   border-radius: 5px;
   height: 40px;
   width: 100px;
@@ -9,13 +8,13 @@
 }
 .linklist{
   display: flex;
-  position: relative;
+  position: absolute;
   flex-direction: column;
-  border: 1px solid black;
-  margin-top: 20px;
-  width: 100px;
+  margin-top: 10px;
+  width: fit-content;
   background-color: white;
   z-index: 9;
+  box-shadow: 1px 5px 10px rgba(126, 125, 125, 0.646);
 }
 .dark {
   background-color: black;

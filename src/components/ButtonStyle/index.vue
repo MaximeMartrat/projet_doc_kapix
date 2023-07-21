@@ -1,9 +1,10 @@
 <template>
   <button
+    :class="icone"
     @click="changeTheme">
-    light/dark
   </button>
 </template>
 <script setup lang="ts">
-import { changeTheme } from './store'
+import { changeTheme, icone } from './store'
+import './style.scss'
 </script>

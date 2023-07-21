@@ -1,17 +1,17 @@
 import { ref } from 'vue'
+import type { Ref } from 'vue'
 
-const isActive = ref([])
+const isButtonHovered: Ref<number> = ref(-1)
+const isListHovered: Ref<boolean[]> = ref([])
 
-export function handleClick (index: number, action: string) {
-  if (action === 'navigate') {
-    // navigation
-  }
-  else if (action === 'link') {
-    isActive.value[index] = !isActive.value[index] // Inverse la valeur de isActive pour l'index spécifié
-  }
-  else {
-    // autres actions
-  }
+export function showList (index: number) {
+  isButtonHovered.value = index
+  isListHovered.value[index] = true
 }
 
-export { isActive }
+export function hideList (index: number) {
+  isButtonHovered.value = -1
+  isListHovered.value[index] = false
+}
+
+export { isButtonHovered, isListHovered }

@@ -1,8 +1,7 @@
 <template>
   <button
-    class="search"
+    class="i-fa-search"
     @click="displaySearch">
-    SEARCH
   </button>
   <DisplaySearch v-if="isActive"></DisplaySearch>
 </template>
@@ -10,5 +9,4 @@
 import './style.scss'
 import { displaySearch, isActive } from './store'
 import DisplaySearch from '~/components/DisplaySearch/index.vue'
-
 </script>

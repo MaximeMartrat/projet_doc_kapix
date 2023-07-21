@@ -1,0 +1,1549 @@
+// Bouton
+.bouton-p5 {
+  &.outer-style {
+    height: 96.645%;
+    width: 100.075%;
+    min-height: 0;
+    min-width: 0;
+    padding: 0 0 25px 0;
+    z-index: 994;
+  }
+  &.inner-style {
+    height: 100%;
+  }
+  &.scroller-style {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: inherit;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  @include media-breakpoint-down(xs) {
+    &.scroller-style {
+      flex-direction: inherit;
+      flex-wrap: wrap;
+      align-content: flex-start;
+    }
+  }
+}
+// Bouton > Main
+.main-p5 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    z-index: 1000;
+  }
+  &.scroller-style {
+    flex-wrap: wrap;
+  }
+  @include media-breakpoint-down(xs) {
+    &.outer-style {
+      order: 1;
+      z-index: 999;
+    }
+  }
+}
+// Bouton > Main > Sous Main
+.sous-main-p5 {
+  &.outer-style {
+    height: 9396px;
+    width: 100.04%;
+    min-height: 9396px;
+    min-width: 0;
+    z-index: 1000;
+  }
+  &.inner-style {
+    height: 100%;
+  }
+  &.property-style {
+    font-family: Roboto;
+    padding: 32px 32px 32px 32px;
+  }
+  &.template-style {
+    max-height: 9396px;
+  }
+  &.scroller-style {
+    flex-wrap: wrap;
+  }
+  @include media-breakpoint-down(xs) {
+    &.outer-style {
+      width: 100%;
+      overflow: inherit;
+    }
+    &.template-style {
+      max-width: none;
+    }
+  }
+}
+// Bouton > Main > Sous Main > Titre
+.titre-p5 {
+  &.outer-style {
+    width: 95.37%;
+    min-width: 0;
+    z-index: 1000;
+  }
+  &.property-style {
+    overflow: hidden;
+    font-size: 3rem;
+    font-weight: 400;
+    padding: 0 0 15px 0;
+  }
+}
+// Bouton > Main > Sous Main > text 1
+.the-v-btn-component-p5 {
+  &.outer-style {
+    height: 103px;
+    width: 96.095%;
+    min-height: 103px;
+    min-width: 0;
+    z-index: 999;
+  }
+  &.inner-style {
+    height: 100%;
+  }
+  &.property-style {
+    overflow: hidden;
+    font-size: 25px;
+    padding: 15px;
+  }
+  &.template-style {
+    max-height: 103px;
+  }
+}
+// Bouton > Main > Sous Main > Utilisation
+.utilisation-p5 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 0 0 48px 0;
+    z-index: 998;
+  }
+  &.property-style {
+    padding: 25px 0 0 0;
+  }
+  &.scroller-style {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: inherit;
+  }
+}
+// Bouton > Main > Sous Main > Utilisation > Titre-categorie
+.titre-categorie-p5 {
+  &.outer-style {
+    padding: 0 0 12px 0;
+    z-index: 1000;
+  }
+  &.property-style {
+    overflow: hidden;
+    font-size: 2.125rem;
+    font-weight: 400;
+  }
+}
+// Bouton > Main > Sous Main > Utilisation > text 1
+.buttons-in-their-simplest-p5 {
+  &.outer-style {
+    z-index: 999;
+  }
+  &.property-style {
+    overflow: hidden;
+    font-size: 25px;
+    padding: 15px;
+  }
+}
+// Bouton > Main > Sous Main > Utilisation > Container
+.container-p5 {
+  &.outer-style {
+    height: 521px;
+    width: 100%;
+    min-height: 521px;
+    min-width: 0;
+    z-index: 998;
+  }
+  &.inner-style {
+    height: 100%;
+  }
+  &.template-style {
+    max-height: 521px;
+  }
+  &.scroller-style {
+    flex-wrap: wrap;
+  }
+}
+// Bouton > Main > Sous Main > Utilisation > Container > Container 5
+.container-5-p5 {
+  &.outer-style {
+    height: 69px;
+    width: 100%;
+    min-height: 69px;
+    min-width: 0;
+    z-index: 1000;
+  }
+  &.inner-style {
+    height: 100%;
+  }
+  &.template-style {
+    max-height: 69px;
+  }
+  &.scroller-style {
+    flex-wrap: wrap;
+  }
+}
+// Bouton > Main > Sous Main > Utilisation > Container > Container 5 > text
+.outlined-p5 {
+  &.outer-style {
+    z-index: 998;
+  }
+  &.property-style {
+    overflow: hidden;
+    border-width: 1px 1px 1px 1px;
+    border-style: solid;
+    padding: 15px;
+    cursor: pointer;
+  }
+}
+// Bouton > Main > Sous Main > Utilisation > Container > Container 5 > text
+.plain-p5 {
+  &.outer-style {
+    z-index: 997;
+  }
+  &.property-style {
+    overflow: hidden;
+    border-width: 1px 1px 1px 1px;
+    border-style: solid;
+    padding: 15px;
+    cursor: pointer;
+  }
+}
+// Bouton > Main > Sous Main > Utilisation > Container > Container 5 > text
+.rounded-p5 {
+  &.outer-style {
+    z-index: 997;
+  }
+  &.property-style {
+    overflow: hidden;
+    border-width: 1px 1px 1px 1px;
+    border-style: solid;
+    padding: 15px;
+    cursor: pointer;
+  }
+}
+// Bouton > Main > Sous Main > Utilisation > Container > Container
+.container-1-p5 {
+  &.outer-style {
+    height: 382px;
+    width: 67.61%;
+    min-height: 382px;
+    min-width: 0;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+  }
+  &.inner-style {
+    height: auto;
+    width: auto;
+  }
+  &.template-style {
+    max-height: 382px;
+  }
+  &.scroller-style {
+    flex-wrap: wrap;
+  }
+  @include media-breakpoint-down(xs) {
+    &.outer-style {
+      width: 100%;
+      overflow: inherit;
+    }
+    &.template-style {
+      max-width: none;
+    }
+  }
+}
+// Bouton > Main > Sous Main > Utilisation > Container > Container > button
+.button-p5 {
+  &.outer-style {
+    padding: 5px;
+    z-index: 1000;
+  }
+  &.property-style {
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.2), 0px 3px 4px 0px rgba(0, 0, 0, 0.14), 0px 3px 3px -2px rgba(0, 0, 0, 0.12);
+    padding: 5px 15px 5px 15px;
+    cursor: pointer;
+  }
+}
+// Bouton > Main > Sous Main > Utilisation > Container > Container
+.container-2-p5 {
+  &.outer-style {
+    height: 253px;
+    width: 6.335%;
+    min-height: 253px;
+    min-width: 0;
+    z-index: 998;
+  }
+  &.inner-style {
+    height: 100%;
+  }
+  &.template-style {
+    max-height: 253px;
+  }
+  &.scroller-style {
+    flex-wrap: wrap;
+  }
+  @include media-breakpoint-down(xs) {
+    &.outer-style {
+      width: 100%;
+      overflow: inherit;
+    }
+    &.template-style {
+      max-width: none;
+    }
+  }
+}
+// Bouton > Main > Sous Main > Utilisation > Container > Container
+.container-3-p5 {
+  &.outer-style {
+    height: 441px;
+    width: 25.475%;
+    min-height: 441px;
+    min-width: 0;
+    z-index: 997;
+  }
+  &.inner-style {
+    height: 100%;
+  }
+  &.template-style {
+    max-height: 441px;
+  }
+  &.scroller-style {
+    flex-wrap: wrap;
+  }
+  @include media-breakpoint-down(xs) {
+    &.outer-style {
+      width: 100%;
+      overflow: inherit;
+    }
+    &.template-style {
+      max-width: none;
+    }
+  }
+}
+// Bouton > Main > Sous Main > Utilisation > Container > Container > color
+.color-p5 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 993;
+  }
+  &.property-style {
+    color: #000000ff;
+    background-color: white;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+    padding: 5px;
+  }
+}
+// Bouton > Main > Sous Main > Utilisation > Code Preview
+.code-preview-p5 {
+  &.outer-style {
+    height: 451px;
+    width: 100%;
+    min-height: 451px;
+    min-width: 0;
+    z-index: 996;
+  }
+  &.inner-style {
+    height: 100%;
+  }
+  &.template-style {
+    max-height: 451px;
+  }
+}
+// Bouton > Main > Sous Main > API
+.api-p5 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 0 0 48px 0;
+    z-index: 997;
+  }
+  &.scroller-style {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: inherit;
+  }
+}
+// Bouton > Main > Sous Main > API > API
+.text-1-p5 {
+  &.outer-style {
+    padding: 0 0 12px 0;
+    z-index: 999;
+  }
+  &.property-style {
+    overflow: hidden;
+    font-size: 2.125rem;
+    font-weight: 400;
+  }
+}
+// Bouton > Main > Sous Main > API > text 1
+.v-btn-is-the-only-component-p5 {
+  &.outer-style {
+    height: 268px;
+    min-height: 268px;
+    z-index: 998;
+  }
+  &.inner-style {
+    height: 100%;
+  }
+  &.property-style {
+    overflow: hidden;
+    font-size: 25px;
+    padding: 15px;
+  }
+  &.template-style {
+    max-height: 268px;
+  }
+}
+// Bouton > Main > Sous Main > API
+.container-4-p5 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 0 0 48px 0;
+    z-index: 996;
+  }
+  &.scroller-style {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: inherit;
+  }
+}
+// Bouton > Main > Sous Main > API > API
+.text-2-p5 {
+  &.outer-style {
+    padding: 0 0 12px 0;
+    z-index: 999;
+  }
+  &.property-style {
+    overflow: hidden;
+    font-size: 2.125rem;
+    font-weight: 400;
+  }
+}
+// Bouton > Main > Sous Main > API > text 1
+.text-3-p5 {
+  &.outer-style {
+    height: 163px;
+    min-height: 163px;
+    z-index: 998;
+  }
+  &.inner-style {
+    height: 100%;
+  }
+  &.property-style {
+    overflow: hidden;
+    font-size: 25px;
+    padding: 15px;
+  }
+  &.template-style {
+    max-height: 163px;
+  }
+}
+// Bouton > Main > Sous Main > Exemple
+.exemple-p5 {
+  &.outer-style {
+    height: 2267px;
+    width: 100%;
+    min-height: 2267px;
+    min-width: 0;
+    padding: 0 0 48px 0;
+    z-index: 995;
+  }
+  &.inner-style {
+    height: 100%;
+  }
+  &.template-style {
+    max-height: 2267px;
+  }
+  &.scroller-style {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: inherit;
+  }
+}
+// Bouton > Main > Sous Main > Exemple > Exemples
+.exemples-p5 {
+  &.outer-style {
+    padding: 0 0 12px 0;
+    z-index: 1000;
+  }
+  &.property-style {
+    overflow: hidden;
+    font-size: 2.125rem;
+    font-weight: 400;
+  }
+}
+// Bouton > Main > Sous Main > Exemple > Proprietes
+.proprietes-p5 {
+  &.outer-style {
+    height: 2183px;
+    width: 100%;
+    min-height: 2183px;
+    min-width: 0;
+    padding: 0 0 48px 0;
+    z-index: 998;
+  }
+  &.inner-style {
+    height: 100%;
+  }
+  &.template-style {
+    max-height: 2183px;
+  }
+  &.scroller-style {
+    flex-wrap: wrap;
+  }
+}
+// Bouton > Main > Sous Main > Exemple > Proprietes > Titre
+.text-4-p5 {
+  &.outer-style {
+    padding: 0 0 8px 0;
+    z-index: 1000;
+  }
+  &.property-style {
+    overflow: hidden;
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+}
+// Bouton > Main > Sous Main > Exemple > Proprietes > Couleurs
+.couleurs-p5 {
+  &.outer-style {
+    height: 189px;
+    width: 100%;
+    min-height: 189px;
+    min-width: 0;
+    padding: 0 0 48px 0;
+    z-index: 999;
+  }
+  &.inner-style {
+    height: 100%;
+  }
+  &.template-style {
+    max-height: 189px;
+  }
+  &.scroller-style {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: inherit;
+  }
+}
+// Bouton > Main > Sous Main > Exemple > Proprietes > Couleurs > text
+.block-p5 {
+  &.outer-style {
+    padding: 0 0 4px 0;
+    z-index: 1000;
+  }
+  &.property-style {
+    overflow: hidden;
+    font-size: 1.25rem;
+    font-weight: 300;
+  }
+}
+// Bouton > Main > Sous Main > Exemple > Proprietes > Couleurs > text 1
+.block-buttons-extend-p5 {
+  &.outer-style {
+    z-index: 999;
+  }
+  &.property-style {
+    overflow: hidden;
+    font-size: 20px;
+    padding: 15px;
+  }
+}
+// Bouton > Main > Sous Main > Exemple > Proprietes > Couleurs > buttonBlock
+.button-block-p5 {
+  &.outer-style {
+    height: 74px;
+    width: 100%;
+    min-height: 74px;
+    min-width: 0;
+    z-index: 998;
+  }
+  &.inner-style {
+    height: 100%;
+  }
+  &.template-style {
+    max-height: 74px;
+  }
+  &.scroller-style {
+    flex-wrap: wrap;
+  }
+}
+// Bouton > Main > Sous Main > Exemple > Proprietes > Couleurs > buttonBlock > button
+.button-1-p5 {
+  &.outer-style {
+    width: 100.04%;
+    min-width: 0;
+    align-self: center;
+    padding: 5px;
+    z-index: 1000;
+  }
+  &.property-style {
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 4px;
+    overflow: hidden;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.2), 0px 3px 4px 0px rgba(0, 0, 0, 0.14), 0px 3px 3px -2px rgba(0, 0, 0, 0.12);
+    padding: 5px 15px 5px 15px;
+    cursor: pointer;
+  }
+}
+// Bouton > Main > Sous Main > Exemple > Proprietes > Code Preview
+.code-preview-1-p5 {
+  &.outer-style {
+    height: 500px;
+    width: 100%;
+    min-height: 500px;
+    min-width: 0;
+    z-index: 998;
+  }
+  &.inner-style {
+    height: 100%;
+  }
+  &.template-style {
+    max-height: 500px;
+  }
+}
+// Bouton > Main > Sous Main > Exemple > Proprietes > Etats
+.etats-p5 {
+  &.outer-style {
+    height: 678px;
+    width: 100%;
+    min-height: 678px;
+    min-width: 0;
+    padding: 0 0 48px 0;
+    z-index: 994;
+  }
+  &.inner-style {
+    height: 100%;
+  }
+  &.template-style {
+    max-height: 678px;
+  }
+  &.scroller-style {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: inherit;
+  }
+}
+// Bouton > Main > Sous Main > Exemple > Proprietes > Etats > Couleurs
+.container-6-p5 {
+  &.outer-style {
+    height: 211px;
+    width: 99.04%;
+    min-height: 211px;
+    min-width: 0;
+    padding: 0 0 48px 0;
+    z-index: 997;
+  }
+  &.inner-style {
+    height: 100%;
+  }
+  &.template-style {
+    max-height: 211px;
+  }
+  &.scroller-style {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: inherit;
+  }
+  @include media-breakpoint-down(xs) {
+    &.outer-style {
+      width: 100%;
+      overflow: inherit;
+    }
+    &.template-style {
+      max-width: none;
+    }
+  }
+}
+// Bouton > Main > Sous Main > Exemple > Proprietes > Etats > Couleurs > text
+.text-5-p5 {
+  &.outer-style {
+    padding: 0 0 4px 0;
+    z-index: 1000;
+  }
+  &.property-style {
+    overflow: hidden;
+    font-size: 1.25rem;
+    font-weight: 300;
+  }
+}
+// Bouton > Main > Sous Main > Exemple > Proprietes > Etats > Couleurs > text 1
+.outlined-buttons-inherit-p5 {
+  &.outer-style {
+    z-index: 999;
+  }
+  &.property-style {
+    overflow: hidden;
+    font-size: 20px;
+    padding: 15px;
+  }
+}
+// Bouton > Main > Sous Main > Exemple > Proprietes > Etats > Couleurs > outlined
+.container-7-p5 {
+  &.outer-style {
+    height: 74px;
+    width: 100%;
+    min-height: 74px;
+    min-width: 0;
+    z-index: 998;
+  }
+  &.inner-style {
+    height: 100%;
+  }
+  &.template-style {
+    max-height: 74px;
+  }
+  &.scroller-style {
+    flex-wrap: wrap;
+  }
+}
+// Bouton > Main > Sous Main > Exemple > Proprietes > Etats > Couleurs > outlined > button
+.outlined-button-p5 {
+  &.outer-style {
+    padding: 5px;
+    z-index: 1000;
+  }
+  &.property-style {
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 4px;
+    overflow: hidden;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.2), 0px 3px 4px 0px rgba(0, 0, 0, 0.14), 0px 3px 3px -2px rgba(0, 0, 0, 0.12);
+    padding: 5px 15px 5px 15px;
+    cursor: pointer;
+  }
+}
+// Bouton > Main > Sous Main > Exemple > Proprietes > Etats > Couleurs > Code Preview 1
+.code-preview-1-p5 {
+  &.outer-style {
+    height: 566px;
+    width: 100%;
+    min-height: 566px;
+    min-width: 0;
+    z-index: 997;
+  }
+  &.inner-style {
+    height: 100%;
+  }
+  &.template-style {
+    max-height: 566px;
+  }
+}
+// Bouton > Main > Sous Main > Exemple > Proprietes > Etats > Couleurs > Couleurs
+.container-8-p5 {
+  &.outer-style {
+    height: 211px;
+    width: 99.04%;
+    min-height: 211px;
+    min-width: 0;
+    padding: 0 0 48px 0;
+    z-index: 996;
+  }
+  &.inner-style {
+    height: 100%;
+  }
+  &.template-style {
+    max-height: 211px;
+  }
+  &.scroller-style {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: inherit;
+  }
+  @include media-breakpoint-down(xs) {
+    &.outer-style {
+      width: 100%;
+      overflow: inherit;
+    }
+    &.template-style {
+      max-width: none;
+    }
+  }
+}
+// Bouton > Main > Sous Main > Exemple > Proprietes > Etats > Couleurs > Couleurs > Couleurs
+.container-9-p5 {
+  &.outer-style {
+    height: 211px;
+    width: 99.04%;
+    min-height: 211px;
+    min-width: 0;
+    padding: 0 0 48px 0;
+    z-index: 996;
+  }
+  &.inner-style {
+    height: 100%;
+  }
+  &.template-style {
+    max-height: 211px;
+  }
+  &.scroller-style {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: inherit;
+  }
+  @include media-breakpoint-down(xs) {
+    &.outer-style {
+      width: 100%;
+      overflow: inherit;
+    }
+    &.template-style {
+      max-width: none;
+    }
+  }
+}
+// Bouton > Main > Sous Main > Exemple > Proprietes > Etats > Couleurs > Couleurs > Couleurs > text
+.text-6-p5 {
+  &.outer-style {
+    padding: 0 0 4px 0;
+    z-index: 1000;
+  }
+  &.property-style {
+    overflow: hidden;
+    font-size: 1.25rem;
+    font-weight: 300;
+  }
+}
+// Bouton > Main > Sous Main > Exemple > Proprietes > Etats > Couleurs > Couleurs > Couleurs > text 1
+.rounded-buttons-behave-p5 {
+  &.outer-style {
+    z-index: 999;
+  }
+  &.property-style {
+    overflow: hidden;
+    font-size: 20px;
+    padding: 15px;
+  }
+}
+// Bouton > Main > Sous Main > Exemple > Proprietes > Etats > Couleurs > Couleurs > Couleurs > Sample Colors
+.sample-colors-p5 {
+  &.outer-style {
+    height: 74px;
+    width: 100%;
+    min-height: 74px;
+    min-width: 0;
+    z-index: 998;
+  }
+  &.inner-style {
+    height: 100%;
+  }
+  &.template-style {
+    max-height: 74px;
+  }
+  &.scroller-style {
+    flex-wrap: wrap;
+  }
+}
+// Bouton > Main > Sous Main > Exemple > Proprietes > Etats > Couleurs > Couleurs > Couleurs > Sample Colors > button
+.rounded-button-p5 {
+  &.outer-style {
+    padding: 5px;
+    z-index: 1000;
+  }
+  &.property-style {
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 20px;
+    overflow: hidden;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.2), 0px 3px 4px 0px rgba(0, 0, 0, 0.14), 0px 3px 3px -2px rgba(0, 0, 0, 0.12);
+    padding: 5px 15px 5px 15px;
+    cursor: pointer;
+  }
+}
+// Bouton > Main > Sous Main > Exemple > Proprietes > Etats > Couleurs > Couleurs > Couleurs > Code Preview 1
+.code-preview-2-p5 {
+  &.outer-style {
+    height: 745px;
+    width: 100%;
+    min-height: 745px;
+    min-width: 0;
+    z-index: 997;
+  }
+  &.inner-style {
+    height: 100%;
+  }
+  &.template-style {
+    max-height: 745px;
+  }
+}
+// Bouton > Main > Sous Main > Exemple > Proprietes > Etats > Couleurs > Couleurs > Couleurs > Couleurs
+.container-10-p5 {
+  &.outer-style {
+    height: 189px;
+    width: 100%;
+    min-height: 189px;
+    min-width: 0;
+    padding: 0 0 48px 0;
+    z-index: 996;
+  }
+  &.inner-style {
+    height: 100%;
+  }
+  &.template-style {
+    max-height: 189px;
+  }
+  &.scroller-style {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: inherit;
+  }
+}
+// Bouton > Main > Sous Main > Exemple > Proprietes > Etats > Couleurs > Couleurs > Couleurs > Couleurs > text
+.sizing-p5 {
+  &.outer-style {
+    padding: 0 0 4px 0;
+    z-index: 1000;
+  }
+  &.property-style {
+    overflow: hidden;
+    font-size: 1.25rem;
+    font-weight: 300;
+  }
+}
+// Bouton > Main > Sous Main > Exemple > Proprietes > Etats > Couleurs > Couleurs > Couleurs > Couleurs > text 1
+.buttons-can-be-given-p5 {
+  &.outer-style {
+    z-index: 999;
+  }
+  &.property-style {
+    overflow: hidden;
+    font-size: 20px;
+    padding: 15px;
+  }
+}
+// Bouton > Main > Sous Main > Exemple > Proprietes > Etats > Couleurs > Couleurs > Couleurs > Couleurs > Code Preview 1
+.code-preview-3-p5 {
+  &.outer-style {
+    height: 481px;
+    width: 100%;
+    min-height: 481px;
+    min-width: 0;
+    z-index: 998;
+  }
+  &.inner-style {
+    height: 100%;
+  }
+  &.template-style {
+    max-height: 481px;
+  }
+}
+// Bouton > Main > Sous Main > Exemple > Proprietes > Etats > Couleurs > Couleurs > Couleurs > Couleurs > Sample Colors
+.container-11-p5 {
+  &.outer-style {
+    height: 74px;
+    width: 100%;
+    min-height: 74px;
+    min-width: 0;
+    z-index: 997;
+  }
+  &.inner-style {
+    height: 100%;
+  }
+  &.template-style {
+    max-height: 74px;
+  }
+  &.scroller-style {
+    flex-wrap: wrap;
+  }
+}
+// Bouton > Main > Sous Main > Exemple > Proprietes > Etats > Couleurs > Couleurs > Couleurs > Couleurs > Code Preview 1
+.code-preview-4-p5 {
+  &.outer-style {
+    height: 481px;
+    width: 100%;
+    min-height: 481px;
+    min-width: 0;
+    z-index: 996;
+  }
+  &.inner-style {
+    height: 100%;
+  }
+  &.template-style {
+    max-height: 481px;
+  }
+}
+// Bouton > Main > Sous Main > Exemple > Proprietes > Etats > Couleurs > Couleurs > Couleurs > Couleurs > Couleurs
+.container-12-p5 {
+  &.outer-style {
+    height: 211px;
+    width: 99.04%;
+    min-height: 211px;
+    min-width: 0;
+    padding: 0 0 48px 0;
+    z-index: 995;
+  }
+  &.inner-style {
+    height: 100%;
+  }
+  &.template-style {
+    max-height: 211px;
+  }
+  &.scroller-style {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: inherit;
+  }
+  @include media-breakpoint-down(xs) {
+    &.outer-style {
+      width: 100%;
+      overflow: inherit;
+    }
+    &.template-style {
+      max-width: none;
+    }
+  }
+}
+// Bouton > Main > Sous Main > Exemple > Proprietes > Etats > Couleurs > Couleurs > Couleurs > Couleurs > Couleurs > text
+.tile-p5 {
+  &.outer-style {
+    padding: 0 0 4px 0;
+    z-index: 1000;
+  }
+  &.property-style {
+    overflow: hidden;
+    font-size: 1.25rem;
+    font-weight: 300;
+  }
+}
+// Bouton > Main > Sous Main > Exemple > Proprietes > Etats > Couleurs > Couleurs > Couleurs > Couleurs > Couleurs > text 1
+.tile-buttons-behave-p5 {
+  &.outer-style {
+    z-index: 999;
+  }
+  &.property-style {
+    overflow: hidden;
+    font-size: 20px;
+    padding: 15px;
+  }
+}
+// Bouton > Main > Sous Main > Exemple > Proprietes > Etats > Couleurs > Couleurs > Couleurs > Couleurs > Couleurs > Sample Colors
+.container-13-p5 {
+  &.outer-style {
+    height: 74px;
+    width: 100%;
+    min-height: 74px;
+    min-width: 0;
+    z-index: 998;
+  }
+  &.inner-style {
+    height: 100%;
+  }
+  &.template-style {
+    max-height: 74px;
+  }
+  &.scroller-style {
+    flex-wrap: wrap;
+  }
+}
+// Bouton > Main > Sous Main > Exemple > Proprietes > Etats > Couleurs > Couleurs > Couleurs > Couleurs > Couleurs > Sample Colors > button
+.button-2-p5 {
+  &.outer-style {
+    padding: 5px;
+    z-index: 1000;
+  }
+  &.property-style {
+    border-width: 1px 1px 1px 1px;
+    border-style: solid;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.2), 0px 3px 4px 0px rgba(0, 0, 0, 0.14), 0px 3px 3px -2px rgba(0, 0, 0, 0.12);
+    padding: 5px 15px 5px 15px;
+    cursor: pointer;
+  }
+}
+// Bouton > Main > Sous Main > Exemple > Proprietes > Etats > Couleurs > Couleurs > Couleurs > Couleurs > Couleurs > Sample Colors
+.container-14-p5 {
+  &.outer-style {
+    height: 74px;
+    width: 100%;
+    min-height: 74px;
+    min-width: 0;
+    z-index: 997;
+  }
+  &.inner-style {
+    height: 100%;
+  }
+  &.template-style {
+    max-height: 74px;
+  }
+  &.scroller-style {
+    flex-wrap: wrap;
+  }
+}
+// Bouton > Main > Sous Main > Exemple > Proprietes > Etats > Couleurs > Couleurs > Couleurs > Couleurs > Couleurs > Sample Colors > Code Preview 1
+.code-preview-5-p5 {
+  &.outer-style {
+    height: 481px;
+    width: 100%;
+    min-height: 481px;
+    min-width: 0;
+    z-index: 1000;
+  }
+  &.inner-style {
+    height: 100%;
+  }
+  &.template-style {
+    max-height: 481px;
+  }
+}
+// Bouton > Main > Sous Main > Exemple > Proprietes > Etats > Couleurs > Couleurs > Couleurs > Couleurs > Couleurs > Titre
+.text-7-p5 {
+  &.outer-style {
+    padding: 0 0 8px 0;
+    z-index: 996;
+  }
+  &.property-style {
+    overflow: hidden;
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+}
+// Bouton > Main > Sous Main > Exemple > Proprietes > Etats > Couleurs > Couleurs > Couleurs > Couleurs > Couleurs
+.container-15-p5 {
+  &.outer-style {
+    height: 211px;
+    width: 99.04%;
+    min-height: 211px;
+    min-width: 0;
+    padding: 0 0 48px 0;
+    z-index: 994;
+  }
+  &.inner-style {
+    height: 100%;
+  }
+  &.template-style {
+    max-height: 211px;
+  }
+  &.scroller-style {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: inherit;
+  }
+  @include media-breakpoint-down(xs) {
+    &.outer-style {
+      width: 100%;
+      overflow: inherit;
+    }
+    &.template-style {
+      max-width: none;
+    }
+  }
+}
+// Bouton > Main > Sous Main > Exemple > Proprietes > Etats > Couleurs > Couleurs > Couleurs > Couleurs > Couleurs > text
+.raised-p5 {
+  &.outer-style {
+    padding: 0 0 4px 0;
+    z-index: 1000;
+  }
+  &.property-style {
+    overflow: hidden;
+    font-size: 1.25rem;
+    font-weight: 300;
+  }
+}
+// Bouton > Main > Sous Main > Exemple > Proprietes > Etats > Couleurs > Couleurs > Couleurs > Couleurs > Couleurs > text 1
+.raised-buttons-have-p5 {
+  &.outer-style {
+    z-index: 999;
+  }
+  &.property-style {
+    overflow: hidden;
+    font-size: 20px;
+    padding: 15px;
+  }
+}
+// Bouton > Main > Sous Main > Exemple > Proprietes > Etats > Couleurs > Couleurs > Couleurs > Couleurs > Couleurs > Sample Colors
+.container-16-p5 {
+  &.outer-style {
+    height: 74px;
+    width: 100%;
+    min-height: 74px;
+    min-width: 0;
+    z-index: 998;
+  }
+  &.inner-style {
+    height: 100%;
+  }
+  &.template-style {
+    max-height: 74px;
+  }
+  &.scroller-style {
+    flex-wrap: wrap;
+  }
+}
+// Bouton > Main > Sous Main > Exemple > Proprietes > text
+.icon-p5 {
+  &.outer-style {
+    padding: 0 0 4px 0;
+    z-index: 993;
+  }
+  &.property-style {
+    overflow: hidden;
+    font-size: 1.25rem;
+    font-weight: 300;
+  }
+}
+// Bouton > Main > Sous Main > Couleurs
+.container-17-p5 {
+  &.outer-style {
+    height: 211px;
+    width: 99.04%;
+    min-height: 211px;
+    min-width: 0;
+    padding: 0 0 48px 0;
+    z-index: 994;
+  }
+  &.inner-style {
+    height: 100%;
+  }
+  &.template-style {
+    max-height: 211px;
+  }
+  &.scroller-style {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: inherit;
+  }
+  @include media-breakpoint-down(xs) {
+    &.outer-style {
+      width: 100%;
+      overflow: inherit;
+    }
+    &.template-style {
+      max-width: none;
+    }
+  }
+}
+// Bouton > Main > Sous Main > Couleurs > text
+.text-8-p5 {
+  &.outer-style {
+    padding: 0 0 4px 0;
+    z-index: 1000;
+  }
+  &.property-style {
+    overflow: hidden;
+    font-size: 1.25rem;
+    font-weight: 300;
+  }
+}
+// Bouton > Main > Sous Main > Couleurs > text 1
+.icons-can-be-used-p5 {
+  &.outer-style {
+    z-index: 999;
+  }
+  &.property-style {
+    overflow: hidden;
+    font-size: 20px;
+    padding: 15px;
+  }
+}
+// Bouton > Right Panel
+.right-panel-p5 {
+  &.outer-style {
+    width: 250px;
+    min-width: 250px;
+    position: sticky;
+    z-index: 999;
+    inset: 0px auto auto 0px;
+  }
+  &.template-style {
+    max-width: 250px;
+  }
+  &.scroller-style {
+    flex-wrap: wrap;
+  }
+  @include media-breakpoint-down(xs) {
+    &.outer-style {
+      order: 0;
+      width: 100%;
+      min-width: 0;
+      overflow: inherit;
+      position: inherit;
+      z-index: 1000;
+      inset: inherit;
+      transform: translateX(0) translateY(0);
+    }
+    &.template-style {
+      max-width: none;
+    }
+  }
+}
+// Bouton > Right Panel > Sous Nav
+.sous-nav-p5 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    z-index: 1001;
+  }
+  &.scroller-style {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: inherit;
+  }
+}
+// Bouton > Right Panel > Sous Nav > Container
+.container-18-p5 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    z-index: 999;
+  }
+  &.scroller-style {
+    flex-wrap: wrap;
+  }
+}
+// Bouton > Right Panel > Sous Nav > Container > text
+.contenu-p5 {
+  &.outer-style {
+    padding: 16px 0 8px 16px;
+    z-index: 1000;
+  }
+  &.property-style {
+    overflow: hidden;
+    font-size: 1.75rem;
+  }
+}
+// Bouton > Right Panel > Sous Nav > Container 1
+.container-19-p5 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 0 0 0 24px;
+    z-index: 998;
+  }
+  &.property-style {
+    color: #6c6c6cff;
+    border-width: 0 0 0 3px;
+    border-color: #9c9c9cff;
+    border-style: solid;
+    padding: 0 0 0 10px;
+  }
+  &.scroller-style {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: inherit;
+  }
+}
+// Bouton > Right Panel > Sous Nav > Container 1 > titre
+.text-9-p5 {
+  &.outer-style {
+    &.state-selected:not(#\ ):not(#\ ) {
+      .text-9-p5 {
+        &.property-style {
+          border-width: 0 0 0 3px;
+          border-style: solid;
+        }
+      }
+    }
+    z-index: 1000;
+  }
+  &.property-style {
+    overflow: hidden;
+    font-size: 1.5rem;
+    padding: 4px 0 4px 12px;
+    cursor: pointer;
+  }
+}
+// Bouton > Right Panel > Sous Nav > Container 1 > titre
+.text-10-p5 {
+  &.outer-style {
+    &.state-selected:not(#\ ):not(#\ ) {
+      .text-10-p5 {
+        &.property-style {
+          border-width: 0 0 0 3px;
+          border-style: solid;
+        }
+      }
+    }
+    z-index: 999;
+  }
+  &.property-style {
+    overflow: hidden;
+    font-size: 1.5rem;
+    padding: 4px 0 4px 12px;
+    cursor: pointer;
+  }
+}
+// Bouton > Right Panel > Sous Nav > Container 1 > titre
+.text-11-p5 {
+  &.outer-style {
+    &.state-selected:not(#\ ):not(#\ ) {
+      .text-11-p5 {
+        &.property-style {
+          border-width: 0 0 0 3px;
+          border-style: solid;
+        }
+      }
+    }
+    z-index: 998;
+  }
+  &.property-style {
+    overflow: hidden;
+    font-size: 1.5rem;
+    padding: 4px 0 4px 12px;
+    cursor: pointer;
+  }
+}
+// Bouton > Right Panel > Sous Nav > Container 1 > sous-categorie
+.sous-categorie-p5 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    z-index: 997;
+  }
+  &.property-style {
+    padding: 0 0 0 12px;
+  }
+  &.scroller-style {
+    flex-wrap: wrap;
+  }
+}
+// Bouton > Right Panel > Sous Nav > Container 1 > sous-categorie > sous-titre
+.sous-titre-p5 {
+  &.outer-style {
+    &.state-selected:not(#\ ):not(#\ ) {
+      .sous-titre-p5 {
+        &.property-style {
+          border-width: 0 0 0 3px;
+          border-style: solid;
+        }
+      }
+    }
+    z-index: 1000;
+  }
+  &.property-style {
+    overflow: hidden;
+    font-size: 1.25rem;
+    padding: 4px 0 4px 12px;
+    cursor: pointer;
+  }
+}
+// Bouton > Right Panel > Sous Nav > Container 1 > sous-categorie > sous-sous-categorie
+.sous-sous-categorie-p5 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    z-index: 999;
+  }
+  &.property-style {
+    padding: 0 0 0 12px;
+  }
+  &.scroller-style {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: inherit;
+  }
+}
+// Bouton > Right Panel > Sous Nav > Container 1 > sous-categorie > sous-sous-categorie > sous-titre
+.text-12-p5 {
+  &.outer-style {
+    &.state-selected:not(#\ ):not(#\ ) {
+      .text-12-p5 {
+        &.property-style {
+          border-width: 0 0 0 3px;
+          border-style: solid;
+        }
+      }
+    }
+    z-index: 1000;
+  }
+  &.property-style {
+    overflow: hidden;
+    font-size: 1rem;
+    padding: 4px 0 4px 12px;
+    cursor: pointer;
+  }
+}
+// Bouton > Right Panel > Sous Nav > Container 1 > sous-categorie > sous-sous-categorie > sous-titre
+.text-13-p5 {
+  &.outer-style {
+    &.state-selected:not(#\ ):not(#\ ) {
+      .text-13-p5 {
+        &.property-style {
+          border-width: 0 0 0 3px;
+          border-style: solid;
+        }
+      }
+    }
+    z-index: 999;
+  }
+  &.property-style {
+    overflow: hidden;
+    font-size: 1rem;
+    padding: 4px 0 4px 12px;
+    cursor: pointer;
+  }
+}
+// Bouton > Right Panel > Sous Nav > Container 1 > sous-categorie > sous-sous-categorie > sous-titre
+.text-14-p5 {
+  &.outer-style {
+    &.state-selected:not(#\ ):not(#\ ) {
+      .text-14-p5 {
+        &.property-style {
+          border-width: 0 0 0 3px;
+          border-style: solid;
+        }
+      }
+    }
+    z-index: 998;
+  }
+  &.property-style {
+    overflow: hidden;
+    font-size: 1rem;
+    padding: 4px 0 4px 12px;
+    cursor: pointer;
+  }
+}
+// Bouton > Icon
+.icon-1-p5 {
+  &.outer-style {
+    height: 50px;
+    width: 50px;
+    min-height: 50px;
+    min-width: 50px;
+    position: absolute;
+    z-index: 997;
+    inset: auto 50px 50px auto;
+  }
+  &.inner-style {
+    height: 100%;
+  }
+  &.property-style {
+    border-width: 5px 5px 5px 5px;
+    border-style: solid;
+    border-radius: 9999px 9999px 9999px 9999px;
+    overflow: hidden;
+    font-size: 33.333333333333336px;
+    text-align: center;
+    cursor: pointer;
+  }
+  &.template-style {
+    max-width: 50px;
+    max-height: 50px;
+  }
+  @include media-breakpoint-down(xs) {
+    &.outer-style {
+      order: 2;
+      z-index: 998;
+    }
+  }
+}
