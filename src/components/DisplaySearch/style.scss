@@ -1,7 +1,7 @@
 .display-search{
   position: absolute;
   z-index: 99;
-  top: 10%;
+  top: 6%;
   left: 35%;
   margin: auto;
   height: 80%;
@@ -41,6 +41,7 @@ h2{
   width: 100%;
   overflow: scroll;
 }
+.display-container::-webkit-scrollbar { width: 0 !important }
 .item-page{
   position: relative;
   margin-top: 10px;

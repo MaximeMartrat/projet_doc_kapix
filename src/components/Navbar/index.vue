@@ -4,7 +4,7 @@
     class="navtop">
     <div class="navhead">
       <logo class="logo"></logo>
-      <ButtonSearch class="'searchbar'"></ButtonSearch>
+      <ButtonSearch></ButtonSearch>
     </div>
     <nav>
       <ul class="navlist">

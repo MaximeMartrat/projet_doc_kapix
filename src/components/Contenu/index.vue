@@ -23,13 +23,15 @@
       >
       </component>
     </div>
-    <Footer></Footer>
+    <Footer
+      :currentComposant="Link"
+      @change-composant="updateLink"></Footer>
   </div>
 </template>
 <script setup lang="ts">
 import './style.scss'
-import { defineAsyncComponent } from 'vue'
-import Footer from '../Footer-contenu/index.vue'
+import { defineAsyncComponent, ref } from 'vue'
+import Footer from '~/components/Footer-contenu/index.vue'
 import { Link } from '~/components/ButtonList/store'
 import { theme } from '~/components/ButtonStyle/store'
 // importattion du router
@@ -43,5 +45,10 @@ const pages = allPages.map(page => page?.toString()).filter(page => page !== und
 const composants = pages.map(page => page?.toString()).filter(page => page?.includes('composants')).map(page => page?.replace('composants-', ''))
 const getPage = (page: string) => defineAsyncComponent(() => import(`../../pages/${page}/index.vue`).then(module => module.default))
 const getComposant = (composant: string) => defineAsyncComponent(() => import(`../../pages/composants/${composant}/index.vue`).then(module => module.default))
+const linkRef = ref(Link)
+const updateLink = (newLink: string) => {
+  linkRef.value = newLink
+}
 
 </script>
+

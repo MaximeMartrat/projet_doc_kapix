@@ -51,7 +51,7 @@ import { hideList, isButtonHovered, isListHovered, showList } from './store'
 import './style.scss'
 import { theme } from '~/components/ButtonStyle/store'
 
-// importattion du router
+// importation du router
 const router = useRouter()
 // récupération de toutes les pages
 const allPages = router.getRoutes().map(route => route.name).filter(name => name)
