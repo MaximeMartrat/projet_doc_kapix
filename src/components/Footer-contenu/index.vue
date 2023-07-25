@@ -10,7 +10,6 @@
     <NavFooter></NavFooter>
     <FooterLink
       class="footer-link"
-      :composants="composants"
       :currentComposant="props.currentComposant"
       @change-composant="handleChangeComposant"></FooterLink>
   </div>
@@ -20,7 +19,8 @@ import './style.scss'
 import { theme } from '~/components/ButtonStyle/store'
 import NavFooter from '~/components/NavFooter/index.vue'
 import FooterLink from '~/components/FooterLink/index.vue'
-const emit = defineEmits()
+const emit = defineEmits(['change-composant'])
+// eslint-disable-next-line vue/require-prop-types
 const props = defineProps(['currentComposant'])
 const handleChangeComposant = (newComposant: string) => {
   emit('change-composant', newComposant)

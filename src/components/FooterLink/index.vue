@@ -2,11 +2,13 @@
   <div class="pagination">
     <button
       class="previous"
+      :disabled="!hasPrevious"
       @click="goToPreviousComposant">
       {{ composants[currentPageIndex - 1] }}
     </button>
     <button
       class="next"
+      :disabled="!hasNext"
       @click="goToNextComposant">
       {{ composants[currentPageIndex + 1] }}
     </button>
@@ -15,10 +17,10 @@
 
 <script setup lang="ts">
 import './style.scss'
-import { watch } from 'vue'
+import { ref, watch } from 'vue'
 import type { PropType } from 'vue'
 
-const emit = defineEmits()
+const emit = defineEmits(['change-composant'])
 // importattion du router
 const router = useRouter()
 // récupération de toutes les pages
@@ -31,27 +33,40 @@ const composants = pages.map(page => page?.toString()).filter(page => page?.incl
 
 const props = defineProps({
   currentComposant: {
-    type: String as PropType<string>, // Spécifiez le type ici (dans cet exemple, c'est une chaîne)
-    required: true // Vous pouvez spécifier si la prop est obligatoire ou non ici
+    type: String as PropType<string>,
+    required: true
   }
 })
-let currentPageIndex = composants.indexOf(props.currentComposant)
-const hasPrevious = currentPageIndex > 0
-const hasNext = currentPageIndex < composants.length - 1
+// Déclaration des ref pour currentPageIndex, hasPrevious, hasNext
+const currentPageIndex = ref(composants.indexOf(props.currentComposant))
+const hasPrevious = ref(currentPageIndex.value > 0)
+const hasNext = ref(currentPageIndex.value < composants.length - 1)
 
+// Surveiller les changements de currentComposant
 watch(() => props.currentComposant, (newComposant) => {
-  currentPageIndex = composants.indexOf(newComposant)
+  // Maj de currentPageIndex avec l'index du nouveau composant
+  currentPageIndex.value = composants.indexOf(newComposant)
+  // Maj de hasPrevious et hasNext en fonction de currentPageIndex
+  hasPrevious.value = currentPageIndex.value > 0
+  hasNext.value = currentPageIndex.value < composants.length - 1
 })
+
+// Fonction pour passer au composant précédent
 const goToPreviousComposant = () => {
-  if (hasPrevious) {
-    const previousComposant = composants[currentPageIndex - 1]
+  if (hasPrevious.value) {
+    // nom du composant précédent à partir du tableau composants
+    const previousComposant = composants[currentPageIndex.value - 1]
+    // événement pour le changement de composant
     emit('change-composant', previousComposant)
   }
 }
 
+// Fonction pour passer au composant suivant
 const goToNextComposant = () => {
-  if (hasNext) {
-    const nextComposant = composants[currentPageIndex + 1]
+  if (hasNext.value) {
+    // nom du composant suivant à partir du tableau composants
+    const nextComposant = composants[currentPageIndex.value + 1]
+    // événement pour le changement de composant
     emit('change-composant', nextComposant)
   }
 }

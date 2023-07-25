@@ -1,6 +1,15 @@
 .pagination{
   height: 100%;
+  width: 100%;
+}
+.previous{
+  float: left;
+  margin-bottom: 50%;
+}
+.previous i{
+  
 }
 .next{
-  margin-left: 90%;
+  float: right;
+  margin-bottom: 50%;
 }
