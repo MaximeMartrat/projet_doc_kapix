@@ -25,3 +25,10 @@
     </p>
   </div>
 </template>
+<route>
+  {
+    "meta": {
+      "layout": "Header"
+    }
+  }
+</route>

@@ -1,17 +1,15 @@
 .navleft{
   position: fixed;
-  top: 10;
-  left: 0;
-  height: 100%;
-  width: 20%;
-  background-color: #f1f1f1;
-  border: 1px solid black;
-  grid-template-columns: 30% 40% 30%;
-}
-.navleftlist{
   display: flex;
   flex-direction: column;
-  grid-column: 2;
+  height: fit-content;
+  top: 10;
+  left: 0;
+  width: 20%;
+  background-color: #f1f1f1;
+}
+.navleftList{
+  display: flex;
 }
 .dark {
   background-color: black;

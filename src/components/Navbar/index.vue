@@ -3,8 +3,8 @@
     :class="theme"
     class="navtop">
     <div class="navhead">
-      <logo class="logo"></logo>
-      <ButtonSearch></ButtonSearch>
+      <ButtonLogo class="logo"></ButtonLogo>
+      <ButtonSearch class="buttonSearch"></ButtonSearch>
     </div>
     <nav>
       <ul class="navlist">
@@ -40,10 +40,6 @@
 </template>
 <script setup lang="ts">
 import './style.scss'
-import Logo from '../Logo/index.vue'
-import ButtonNav from '../ButtonNav/index.vue'
-import ButtonSearch from '../ButtonSearch/index.vue'
-import ButtonStyle from '../ButtonStyle/index.vue'
 import { theme } from '~/components/ButtonStyle/store'
 
 </script>

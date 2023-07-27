@@ -1,0 +1,33 @@
+.button-nav-container-left{
+  margin-top: 200px;
+}
+
+.button-nav-left{
+  height: 40px;
+  width: 100%;
+}
+.button-nav-left:hover{
+  background-color: #F6C041;
+}
+.button-nav-left span{
+  float: right;
+}
+.linklist-left{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  width: 100%;
+  background-color: white;
+  z-index: 9;
+}
+.dark {
+  background-color: black;
+  color: white;
+  border-color: white;
+}
+.light {
+  background-color: white;
+  color: black;
+  border-color: black;
+}

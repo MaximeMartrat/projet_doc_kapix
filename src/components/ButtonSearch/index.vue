@@ -13,7 +13,7 @@
 <script setup lang="ts">
 import './style.scss'
 import { displaySearch, hideDisplaySearch, isActive } from './store'
-import DisplaySearch from '~/components/DisplaySearch/index.vue'
+
 // Ajouter un écouteur d'événement au montage du composant
 onMounted(() => {
   document.addEventListener('click', handleClickOutside)

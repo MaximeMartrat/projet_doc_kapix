@@ -1,11 +1,11 @@
 <template>
-  <div class="button-nav-container">
+  <div class="button-nav-container-left">
     <button
       v-if="action === 'link'"
+      ref="buttonRef"
       :class="theme"
-      class="button-nav"
-      @mouseover="showList(index)"
-      @mouseleave="hideList(index)"
+      class="button-nav-left"
+      @click="showList(index)"
     >
       {{ text }}
       <span
@@ -14,12 +14,11 @@
       <span
         v-else
         class="i-fa-solid-caret-up">2</span>
-      <template v-if="action === 'link' && (isButtonHovered === index || isListHovered[index])">
+      <div v-if="action === 'link' && (isButtonHovered === index || isListHovered[index])">
         <ul
           v-if="page === 'pages'"
-          :class="{ [theme]: true, 'linklist': true, 'active': isButtonHovered === index || isListHovered }"
-          @mouseover="showList(index)"
-          @mouseleave="hideList(index)">
+          ref="listContainer"
+          :class="{ [theme]: true, 'linklist-left': true, 'active': isButtonHovered === index || isListHovered }">
           <li
             v-for="vue in intro"
             :key="vue"
@@ -29,9 +28,8 @@
         </ul>
         <ul
           v-if="page === 'composants'"
-          :class="{ [theme]: true, 'linklist': true, 'active': isButtonHovered === index || isListHovered }"
-          @mouseover="showList(index)"
-          @mouseleave="hideList(index)">
+          ref="listContainer"
+          :class="{ [theme]: true, 'linklist-left': true, 'active': isButtonHovered === index || isListHovered }">
           <li
             v-for="vue in composants"
             :key="vue">
@@ -39,7 +37,7 @@
               :link="vue?.toString().replace('composants-', '')"></ButtonList>
           </li>
         </ul>
-      </template>
+      </div>
     </button>
     <button
       v-else
@@ -52,9 +50,13 @@
 </template>
 
 <script setup lang="ts">
-import { hideList, isButtonHovered, isListHovered, showList } from './store'
+import { useRouter } from 'vue-router'
+import { ref, watch } from 'vue'
+import { isButtonHovered, isListHovered, showList } from './store'
 import './style.scss'
 import { theme } from '~/components/ButtonStyle/store'
+const listContainer = ref(0)
+const buttonRef = ref(0)
 
 // importation du router
 const router = useRouter()
@@ -68,6 +70,10 @@ const pages = allPages.map(page => page?.toString()).filter(page => page !== und
 const intro = pages.map(page => page?.toString()).filter(page => !page?.includes('composants'))
 // pages de composants
 const composants = pages.map(page => page?.toString()).filter(page => page?.includes('composants'))
+watch(listContainer, () => {
+  const buttonHeight = listContainer.value?.clientHeight
+  return buttonHeight
+})
 
 // propriétés des boutonNav
 defineProps({

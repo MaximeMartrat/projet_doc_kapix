@@ -1,4 +1,7 @@
 <template>
+  <div>
+    <NavLeft></NavLeft>
+  </div>
   <div
     :class="theme"
     class="container-main">
@@ -34,6 +37,7 @@ import { defineAsyncComponent, ref } from 'vue'
 import Footer from '~/components/Footer-contenu/index.vue'
 import { Link } from '~/components/ButtonList/store'
 import { theme } from '~/components/ButtonStyle/store'
+import NavLeft from '~/components/Navbar-g/index.vue'
 // importattion du router
 const router = useRouter()
 // récupération de toutes les pages
