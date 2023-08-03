@@ -10,6 +10,7 @@
       <ul class="navlist">
         <li>
           <ButtonNav
+            class="nav-button"
             :index="0"
             text="Start"
             action="link"
@@ -18,6 +19,7 @@
         </li>
         <li>
           <ButtonNav
+            class="nav-button"
             :index="1"
             text="Composants"
             action="link"
@@ -26,13 +28,14 @@
         </li>
         <li>
           <ButtonNav
+            class="nav-button"
             text="redirect"
             action="navigate">
           </ButtonNav>
         </li>
         <li></li>
       </ul>
-      <ul class="tolllist">
+      <ul class="toolist">
         <li><ButtonStyle></ButtonStyle></li>
       </ul>
     </nav>

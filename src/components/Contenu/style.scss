@@ -1,9 +1,9 @@
 .container-main{
   position: fixed;
-  margin-left: 20%;
+  margin-left: 15%;
   margin-right: 20%;
   height: 100%;
-  width: 80%;
+  width: 85%;
   background-color: #ffffff;
   border-left: 1px solid black;
   overflow-y: scroll;
@@ -13,6 +13,9 @@
 .container-content{
   margin-left: 2%;
   margin-right: 2%;
+}
+.container-nav{
+  overflow-y: scroll;
 }
 .dark {
   background-color: black;

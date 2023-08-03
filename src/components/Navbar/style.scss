@@ -4,8 +4,35 @@
   width: 100px;
 }
 .button-nav:hover{
-  background-color: #F6C041;
+  background-color: #f0efef;
+  &.dark{
+    background-color: rgba(101, 101, 101, 0.473);
+  }
 }
+.linklist{
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  margin-top: 10px;
+  width: fit-content;
+  background-color: white;
+  z-index: 9;
+  border-radius: 5px;
+  box-shadow: 1px 5px 10px rgba(126, 125, 125, 0.646);
+}
+
+.button-link button{
+  width: 100%;
+}
+.button-link button:hover{
+  &.light{
+    background-color: #f0efef;
+  }
+  &.dark{
+    background-color: rgba(101, 101, 101, 0.473);
+  }
+}
+
 .navtop{
   display: grid;
   grid-template-columns: 20% 70% 10%;
@@ -18,7 +45,7 @@
 }
 nav{
   display: grid;
-  grid-template-columns: 10% 40% 40% 10%;
+  grid-template-columns: 10% 40% 30% 20%;
   grid-column: 2;
   grid-row:2;
 }
@@ -46,7 +73,7 @@ nav li{
   grid-column: 2;
 }
 .toolist{
-  grid-column: 3;
+  grid-column: 4;
 }
 .dark {
   background-color: black;

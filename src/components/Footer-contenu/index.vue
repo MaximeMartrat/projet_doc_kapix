@@ -11,7 +11,7 @@
     <FooterLink
       class="footer-link"
       :currentComposant="props.currentComposant"
-      @change-composant="handleChangeComposant"></FooterLink>
+      @change-composant="changeComposant"></FooterLink>
   </div>
 </template>
 <script setup lang="ts">
@@ -22,7 +22,7 @@ import FooterLink from '~/components/FooterLink/index.vue'
 const emit = defineEmits(['change-composant'])
 // eslint-disable-next-line vue/require-prop-types
 const props = defineProps(['currentComposant'])
-const handleChangeComposant = (newComposant: string) => {
+const changeComposant = (newComposant: string) => {
   emit('change-composant', newComposant)
 }
 </script>

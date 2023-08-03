@@ -1,5 +1,6 @@
 <template>
-  <div>
+  <div
+    :class="theme">
     <NavLeft></NavLeft>
   </div>
   <div

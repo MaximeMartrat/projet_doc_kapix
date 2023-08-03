@@ -27,12 +27,12 @@
           <h2>Composants</h2>
           <ButtonList
             :link="page.replace('composants-', '')"
-            @click="displaySearch"></ButtonList>
+            @click="redirectionClick(page)"></ButtonList>
         </template>
         <template v-else>
           <ButtonList
             :link="page"
-            @click="displaySearch"></ButtonList>
+            @click="redirectionClick(page)"></ButtonList>
         </template>
       </div>
     </div>
@@ -43,16 +43,18 @@ import './style.scss'
 import { ref } from 'vue'
 import Logo from '../Logo/index.vue'
 import ButtonList from '~/components/ButtonList/index.vue'
-import { displaySearch } from '~/components/ButtonSearch/store'
 import { theme } from '~/components/ButtonStyle/store'
 
 const input = ref('')
 const router = useRouter()
-const exceptionsPage = ['all', 'index']
+const exceptionsPage = ['all', 'index', 'accueil']
 const allPages = router.getRoutes().map(route => route.name).filter(name => name)
 const pages = allPages.map(page => page?.toString()).filter(page => page !== undefined && !page.endsWith('en-US') && !page.endsWith('fr-FR') && !exceptionsPage.includes(page as string))
 const isActive = ref(false)
-
+const redirectionClick = (vue: string | undefined) => {
+  // Redirection vers la page d'accueil avant de changer le composant affiché
+  router.push({ path: '/' })
+}
 function filteredList () {
   const searchText = input.value.trim().toUpperCase()
   if (searchText.length <= 1) {

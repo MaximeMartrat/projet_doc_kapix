@@ -2,7 +2,9 @@
   <nav
     :class="theme"
     class="navleft">
-    <div class="navleftlist">
+    <div
+      class="navleftlist"
+      :class="theme">
       <ButtonNavLeft
         :index="0"
         text="Start"

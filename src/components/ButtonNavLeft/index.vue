@@ -1,19 +1,21 @@
 <template>
-  <div class="button-nav-container-left">
+  <div
+    class="button-nav-container-left"
+    :style="{ marginBottom: action === 'link' ? buttonHeight + 'px' : 'auto' }">
     <button
       v-if="action === 'link'"
       ref="buttonRef"
-      :class="theme"
+      :class="{ [theme]: true, 'button-clicked': index === isButtonClicked, 'unclicked': index === clickedRemove }"
       class="button-nav-left"
       @click="showList(index)"
     >
       {{ text }}
       <span
         v-if="!isListHovered[index]"
-        class="i-fa-solid-caret-down">1</span>
+        class="i-fa6-solid-angle-down">1</span>
       <span
         v-else
-        class="i-fa-solid-caret-up">2</span>
+        class="i-fa6-solid-angle-up">2</span>
       <div v-if="action === 'link' && (isButtonHovered === index || isListHovered[index])">
         <ul
           v-if="page === 'pages'"
@@ -23,7 +25,11 @@
             v-for="vue in intro"
             :key="vue"
           >
-            <ButtonList :link="vue"></ButtonList>
+            <ButtonList
+              class="button-list"
+              :link="vue"
+              @click.stop>
+            </ButtonList>
           </li>
         </ul>
         <ul
@@ -34,7 +40,10 @@
             v-for="vue in composants"
             :key="vue">
             <ButtonList
-              :link="vue?.toString().replace('composants-', '')"></ButtonList>
+              class="button-list"
+              :link="vue?.toString().replace('composants-', '')"
+              @click.stop>
+            </ButtonList>
           </li>
         </ul>
       </div>
@@ -52,18 +61,19 @@
 <script setup lang="ts">
 import { useRouter } from 'vue-router'
 import { ref, watch } from 'vue'
-import { isButtonHovered, isListHovered, showList } from './store'
+import { clickedRemove, isButtonClicked, isButtonHovered, isListHovered, showList } from './store'
 import './style.scss'
 import { theme } from '~/components/ButtonStyle/store'
-const listContainer = ref(0)
+const listContainer = ref<HTMLElement | null>(null)
 const buttonRef = ref(0)
+const buttonHeight = ref(0)
 
 // importation du router
 const router = useRouter()
 // récupération de toutes les pages
 const allPages = router.getRoutes().map(route => route.name).filter(name => name)
 // Liste de pages inutiles
-const exceptionsPage = ['all', 'index']
+const exceptionsPage = ['all', 'index', 'accueil']
 // filtre pour ignorer les pages inutiles
 const pages = allPages.map(page => page?.toString()).filter(page => page !== undefined && !page.endsWith('en-US') && !page.endsWith('fr-FR') && !exceptionsPage.includes(page as string))
 // pages d'intro
@@ -71,10 +81,13 @@ const intro = pages.map(page => page?.toString()).filter(page => !page?.includes
 // pages de composants
 const composants = pages.map(page => page?.toString()).filter(page => page?.includes('composants'))
 watch(listContainer, () => {
-  const buttonHeight = listContainer.value?.clientHeight
-  return buttonHeight
+  if (listContainer.value) {
+    buttonHeight.value = listContainer.value.clientHeight
+  }
+  else {
+    buttonHeight.value = 0
+  }
 })
-
 // propriétés des boutonNav
 defineProps({
   index: {

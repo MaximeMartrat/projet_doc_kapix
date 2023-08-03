@@ -9,11 +9,7 @@
     >
       {{ text }}
       <span
-        v-if="!isListHovered[index]"
-        class="i-fa-solid-caret-down">1</span>
-      <span
-        v-else
-        class="i-fa-solid-caret-up">2</span>
+        class="i-fa6-solid-angle-down">1</span>
       <template v-if="action === 'link' && (isButtonHovered === index || isListHovered[index])">
         <ul
           v-if="page === 'pages'"
@@ -24,7 +20,11 @@
             v-for="vue in intro"
             :key="vue"
           >
-            <ButtonList :link="vue"></ButtonList>
+            <ButtonList
+              class="button-link"
+              :link="vue"
+              @click="redirectionClick(vue)">
+            </ButtonList>
           </li>
         </ul>
         <ul
@@ -36,7 +36,10 @@
             v-for="vue in composants"
             :key="vue">
             <ButtonList
-              :link="vue?.toString().replace('composants-', '')"></ButtonList>
+              class="button-link"
+              :link="vue?.toString().replace('composants-', '')"
+              @click="redirectionClick(vue)">
+            </ButtonList>
           </li>
         </ul>
       </template>
@@ -61,14 +64,17 @@ const router = useRouter()
 // récupération de toutes les pages
 const allPages = router.getRoutes().map(route => route.name).filter(name => name)
 // Liste de pages inutiles
-const exceptionsPage = ['all', 'index']
+const exceptionsPage = ['all', 'index', 'accueil']
 // filtre pour ignorer les pages inutiles
 const pages = allPages.map(page => page?.toString()).filter(page => page !== undefined && !page.endsWith('en-US') && !page.endsWith('fr-FR') && !exceptionsPage.includes(page as string))
 // pages d'intro
 const intro = pages.map(page => page?.toString()).filter(page => !page?.includes('composants'))
 // pages de composants
 const composants = pages.map(page => page?.toString()).filter(page => page?.includes('composants'))
-
+const redirectionClick = (vue: string | undefined) => {
+  // Redirection vers la page d'accueil avant de changer le composant affiché
+  router.push({ path: '/' })
+}
 // propriétés des boutonNav
 defineProps({
   index: {
@@ -89,4 +95,5 @@ defineProps({
     default: 'pages'
   }
 })
+
 </script>
