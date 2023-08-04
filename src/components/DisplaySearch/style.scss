@@ -1,21 +1,23 @@
 .display-search{
   position: absolute;
   z-index: 99;
-  top: 7.5%;
+  top: 8%;
   left: 35%;
   margin: auto;
   height: 80%;
   width: 35%;
-  border: 1px solid black;
-  border-radius: 10px;
-  background-color: white;
+  border: 1px outset rgb(255, 255, 255) !important;
+  border-radius: 5px;
+  box-shadow: 1px 5px 10px rgba(126, 125, 125, 0.646);
 }
 .header-search{
+  padding: 10px;
   height: 10%;
-  margin-top: 10px;
   display: grid;
   grid-template-columns: 20% 30% 50%;
   grid-template-rows: 20% 60% 20%;
+  background: rgb(255,193,7);
+  background: linear-gradient(90deg, rgb(254, 193, 11) 0%, rgb(253, 191, 5) 50%);
 }
 Logo{
   grid-column: 1;
@@ -24,6 +26,10 @@ Logo{
 h2{
   grid-column: 2;
   grid-row:2;
+}
+.title-search{
+  color: white;
+  text-shadow: 1px 2px 2px rgb(152, 126, 54);
 }
 .display-form{
   height:10%;
@@ -34,14 +40,17 @@ h2{
   width: 100%;
   margin: auto;
   padding: 5px;
-  border:1px solid black;
+  color: black !important;
+  background-color: rgb(237, 237, 237) !important;
+  border-top: 1px solid rgb(167, 164, 164) !important;
+  border-bottom: 2px solid black !important;
 }
 .display-container{
   height: 70%;
   width: 100%;
-  overflow: scroll;
+  overflow-y: auto;
 }
-.display-container::-webkit-scrollbar { width: 0 !important }
+
 .item-page{
   position: relative;
   margin-top: 10px;
@@ -56,3 +65,4 @@ h2{
   color: black;
   border-color: black;
 }
+

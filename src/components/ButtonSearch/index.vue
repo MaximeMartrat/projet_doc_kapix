@@ -1,36 +1,42 @@
 <template>
   <button
-    class="i-fa-search"
+    class="button-search"
     @click="displaySearch"
   >
+    <i class="i-fa-search" /><span>Search</span>
   </button>
   <DisplaySearch
     v-if="isActive"
-    class="displayS"
+    :class="{ 'displayS': true, 'open-search': isActive, 'close-search': isClosing }"
     @close="hideDisplaySearch"
   ></DisplaySearch>
 </template>
 <script setup lang="ts">
 import './style.scss'
-import { displaySearch, hideDisplaySearch, isActive } from './store'
+import { displaySearch, hideDisplaySearch, isActive, isClosing } from './store'
 
-// Ajouter un écouteur d'événement au montage du composant
+// Add event au montage du composant
 onMounted(() => {
   document.addEventListener('click', handleClickOutside)
 })
 
-// Supprimer l'écouteur d'événement lorsque le composant est démonté
+// erase l'event si composant démonté
 onUnmounted(() => {
   document.removeEventListener('click', handleClickOutside)
 })
 
-// Vérifier si le clic est à l'extérieur du composant DisplaySearch
+// Si clic à l'extérieur du composant
 function handleClickOutside (event: MouseEvent) {
   const target = event.target as HTMLElement
   const displaySearchElement = document.querySelector('.displayS')
 
-  // Vérifier si le clic n'est pas dans le composant DisplaySearch et n'est pas dans le bouton qui ouvre le composant
-  if (displaySearchElement && !displaySearchElement.contains(target) && !target.classList.contains('i-fa-search')) {
+  // Si clic ni dans composant ni dans le bouton
+  if (
+    displaySearchElement
+    && !displaySearchElement.contains(target)
+    && !target.classList.contains('i-fa-search')
+    && !target.parentElement?.classList.contains('button-search')
+  ) {
     hideDisplaySearch()
   }
 }

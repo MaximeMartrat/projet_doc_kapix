@@ -1,7 +1,7 @@
 <template>
   <img
+    src="/public/pwa-512x512.png"
     class="img-logo"
-    src="/public/pwa-192x192.png"
     alt="logo">
 </template>
 

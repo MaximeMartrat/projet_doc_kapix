@@ -3,8 +3,13 @@
     :class="theme"
     class="display-search">
     <div class="header-search">
-      <logo></logo>
-      <h2>KAPIX SEARCH</h2>
+      <img
+        src="/public/pwa-white-512x512.png"
+        class="img-logo"
+        alt="logo">
+      <h2 class="title-search">
+        KAPIX SEARCH
+      </h2>
     </div>
     <form class="display-form">
       <input
@@ -16,7 +21,8 @@
     </form>
     <div
       v-if="isActive"
-      class="display-container">
+      class="display-container"
+      :class="theme">
       <div
         v-for="page in filteredList()"
         :key="page"
@@ -41,19 +47,18 @@
 <script setup lang="ts">
 import './style.scss'
 import { ref } from 'vue'
-import Logo from '../Logo/index.vue'
 import ButtonList from '~/components/ButtonList/index.vue'
 import { theme } from '~/components/ButtonStyle/store'
-
+import { hideDisplaySearch } from '~/components/ButtonSearch/store'
 const input = ref('')
 const router = useRouter()
-const exceptionsPage = ['all', 'index', 'accueil']
+const exceptionsPage = ['all', 'index', 'Navigation']
 const allPages = router.getRoutes().map(route => route.name).filter(name => name)
-const pages = allPages.map(page => page?.toString()).filter(page => page !== undefined && !page.endsWith('en-US') && !page.endsWith('fr-FR') && !exceptionsPage.includes(page as string))
+const pages = allPages.map(page => page?.toString()).sort().filter(page => page !== undefined && !page.endsWith('en-US') && !page.endsWith('fr-FR') && !exceptionsPage.includes(page as string))
 const isActive = ref(false)
 const redirectionClick = (vue: string | undefined) => {
-  // Redirection vers la page d'accueil avant de changer le composant affiché
-  router.push({ path: '/' })
+  router.push({ path: '/Navigation' })
+  hideDisplaySearch()
 }
 function filteredList () {
   const searchText = input.value.trim().toUpperCase()

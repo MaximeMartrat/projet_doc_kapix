@@ -1,10 +1,16 @@
 import { ref } from 'vue'
 const isActive = ref(false)
+const isClosing = ref(false)
 export function displaySearch () {
-  isActive.value = !isActive.value
+  isActive.value = true
+  isClosing.value = false
 }
 export function hideDisplaySearch () {
-  isActive.value = !isActive.value
+  isClosing.value = true
+  setTimeout(() => {
+    isActive.value = false
+    isClosing.value = false
+  }, 400)
 }
 
-export { isActive }
+export { isActive, isClosing }

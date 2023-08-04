@@ -73,9 +73,9 @@ const router = useRouter()
 // récupération de toutes les pages
 const allPages = router.getRoutes().map(route => route.name).filter(name => name)
 // Liste de pages inutiles
-const exceptionsPage = ['all', 'index', 'accueil']
+const exceptionsPage = ['all', 'index', 'Navigation']
 // filtre pour ignorer les pages inutiles
-const pages = allPages.map(page => page?.toString()).filter(page => page !== undefined && !page.endsWith('en-US') && !page.endsWith('fr-FR') && !exceptionsPage.includes(page as string))
+const pages = allPages.map(page => page?.toString()).sort().filter(page => page !== undefined && !page.endsWith('en-US') && !page.endsWith('fr-FR') && !exceptionsPage.includes(page as string))
 // pages d'intro
 const intro = pages.map(page => page?.toString()).filter(page => !page?.includes('composants'))
 // pages de composants

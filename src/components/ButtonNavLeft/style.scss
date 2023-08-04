@@ -10,6 +10,7 @@
     background-color: #65656579;
   }
 }
+
 .button-clicked {
   animation: 0.5s linear slidein;
   animation-name: colorTransition;
@@ -19,9 +20,10 @@
   animation-name: colorTransition2;
 }
 .active {
-  animation: 0.5s linear slidein;
+  animation: 0.8s linear slidein;
   animation-name: openTransition;
 }
+
 @keyframes colorTransition {
   from {
     background-color: #f0efef;
@@ -29,7 +31,7 @@
     padding-left: 50px;
   }
   50% {
-    background-color: #898989;
+    background-color:rgb(255,193,7);
   }
   to {
     background-color: #f0efef;
@@ -37,7 +39,7 @@
 }
 @keyframes colorTransition2 {
   from {
-    background-color: #898989;
+    background-color: #0D5E9C;;
     font-size: 10px;
     padding-left: -50px;
   }
@@ -49,10 +51,14 @@
   from {
     opacity: 0;
   }
+  25% {
+    opacity:0;
+  }
   to {
     opacity: 1;
   }
 }
+
 .button-nav-left span{
   float: right;
 }

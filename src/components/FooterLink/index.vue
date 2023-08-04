@@ -1,16 +1,18 @@
 <template>
   <div class="pagination">
     <button
+      v-if="composants[currentPageIndex - 1]"
       class="previous"
       :disabled="!hasPrevious"
       @click="goToPreviousComposant">
-      {{ composants[currentPageIndex - 1] }}
+      <i class="i-fa-solid-chevron-left" /><span>{{ composants[currentPageIndex - 1] }}</span>
     </button>
     <button
+      v-if="composants[currentPageIndex + 1]"
       class="next"
       :disabled="!hasNext"
       @click="goToNextComposant">
-      {{ composants[currentPageIndex + 1] }}
+      <span>{{ composants[currentPageIndex + 1] }}</span><i class="i-fa-solid-chevron-right" />
     </button>
   </div>
 </template>

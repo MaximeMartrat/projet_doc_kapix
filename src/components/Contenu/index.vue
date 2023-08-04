@@ -6,7 +6,10 @@
   <div
     :class="theme"
     class="container-main">
-    <div class="container-content"></div>
+    <NavRight></NavRight>
+    <div
+      :class="theme">
+    </div>
     <div
       v-for="page in allPages"
       :key="page"
@@ -39,6 +42,7 @@ import Footer from '~/components/Footer-contenu/index.vue'
 import { Link } from '~/components/ButtonList/store'
 import { theme } from '~/components/ButtonStyle/store'
 import NavLeft from '~/components/Navbar-g/index.vue'
+import NavRight from '~/components/Navbar-d/index.vue'
 // importattion du router
 const router = useRouter()
 // récupération de toutes les pages

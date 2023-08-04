@@ -4,7 +4,7 @@
     class="navtop">
     <div class="navhead">
       <ButtonLogo class="logo"></ButtonLogo>
-      <ButtonSearch class="buttonSearch"></ButtonSearch>
+      <ButtonSearch></ButtonSearch>
     </div>
     <nav>
       <ul class="navlist">
